@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+  
+  <h2>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use `typeof` and `console.log()` to help with this.</h2>
+  <p>Input from a prompt is a String.</p>
+
+  
+  <h2>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+  <p>A blank string gets assigned.</p>
+
+  <h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+  <p>Yes.</p>
+
+
+  <h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+  <p>Yes, if I asked a user what he/she wanted for Christmas, I wouldn't store that input in a variable called name. The order of my questions probably doesn't matter too much in this case, but I'm sure there are cases where it would matter (like tic-tac-toe).</p>
+
+  <h2>In these exercises, we use `prompt()` to collect information, but most websites do that ask for information do not use `prompt()` -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with `prompt()`? Are there any disadvantages? Why might you use `prompt()`?</h2>
+  <p>Other websites most likely use html forms to collect information.</p>
+  <p>If you use prompt, the user <i>must</i> enter input in order to proceed. That might be a disadvantage. Or an advantage.</p>
+  <p>You might want to use prompt if you need some information from a user before they enter a website, like determining that a user is 21 years of age or older before entering a website that sells or advertises alcohol.</p>
+
+  <h2>Research `prompt()` -- is there any way to make it so that there are two (or more) fields?</h2>
+  <p>Using prompt, no. But you could probably write your own function similar to prompt that does what you want.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>I'm curious about how to add styling to a prompt dialog box, or a dialog box in general. I will get my answer when we do styling next week, I imagine.</p>
+</body>
+</html>
