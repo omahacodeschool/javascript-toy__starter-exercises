@@ -90,8 +90,25 @@ I used '==' out of habit but all of them seem to work as well when I test them.
 </p>
 
 <h3>
-
+  - Does it matter what order your `if` / `else if` statements happen? If you reorder them, does your program still produce correct output?
 </h3>
+<p>
+  It doesn't seem to matter if I reorganize them. I don't see any change in output. 
+</p>
+<h3>
+  - What's wrong with this conditional: `if (age < 16 && age > 21)`?
+</h3>
+<p>
+  You have two combating statements. You can't have your age be less than 16 and greater than 21. You'd have to set a range like 'if (age >16 && age < 21)' to get a correct output.
+</p>
+<h3>
+  - Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your `if` statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?
+</h3>
+<p>
+  I think just going in and swapping the numbers would be easier. It's a personal preference, or at least that's how I see it. If you have variables it seems less easy to maintain because then you have to look at the variables and what they're set to and make sure you're changing the right variables to the correct number. It's an extra bit of mess in my opinion.
+</p>
+
+
 
 
 
