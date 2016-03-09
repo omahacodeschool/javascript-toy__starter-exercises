@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>JS Atomic 03</title>
@@ -7,6 +7,16 @@
 </head>
 <body>
   <h1>JS Atomic 03</h1>
-  <!--Answer 3 questions here-->
+
+  <h2>Why don't you need to use the var keyword every time you use a variable (right now, we only use it when we create the variable)? What does var do?</h2>
+  <p>It would appear that we only use the 'var' keyword when setting a variable, not when calling the variable.</p>
+
+  <h2>What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h2>
+  <p>Calling a variable without first assigning value to it results in 'undefined' being returned, but the alert still operated as usual.</p>
+  <p>When I tried to call a variable without even setting it up at all, the 'alert' was completely ignored and nothing happened on the page.</p>
+  <p>In the console, the error message "Uncaught ReferenceError: absentVariable is not defined" was present and no other information was printed.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>I guess I am wondering why the alert the appears for an undefined variable vs one that wasn't even created in the first place.</p>
 </body>
 </html>
