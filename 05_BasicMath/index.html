@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+
+  <h1>Head on over and check the console, friend.</h1>
+  
+  <h2>What happens when you try to parse the integer out of a string like `"I am 9 years old"`? How about `"9 is my age"`? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+  <p>I am 9 years old will return NaN when you run parseInt on it.</p>
+  <p>9 is my age will return 9 when you run parseInt because it starts with a number.</p>
+  <p>The string must start with a number and the number must be identifiable given the numeric system you specified in the radix parameter. Or you could also run replace(/[^0-9]+/g, '') to remove non-numeric text and return the number using parseInt, assuming there is only one number in the String...</p>
+
+
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>The same rules still apply - must start with number.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>This is a strange function to me. It seems like there are probably a thousand other functions that would perform that task (getting the number out of that string) a lot easier and more reliably. Not exactly sure when parseInt would be superior, but I'm sure there are occasions (most likely).</p>
+
+  <h2>Bonus</h2>
+  <p>Maybe later, I've already gone down too many rabbit holes.</p>
+  
+</body>
+</html>
