@@ -5,19 +5,18 @@ user_age = parseInt(user_age)
 //user_guess = parseInt(user_guess)
 
 // Alerts
-if (user_age >= 0 && user_age <= 15){
-  alert("You can't drive yet.'")
-} 
 if (user_age >= 25){
   alert("You can rent a car!")
 } 
-if (user_age >= 21 && user_age < 25){
+if (user_age >= 21 || user_age >= 25){
   alert("Please don't drink and drive")
 } 
-if (user_age >= 16 && user_age < 21){
+if (user_age >= 16 || user_age >= 21){
   alert("You can legally drive a motorized vehicle!")
 } 
-
+if (user_age >= 0 && user_age <= 15){
+  alert("You can't drive yet.'")
+} 
 if (user_age < 0 ){
   alert("You haven't been born yet!")
 } 
