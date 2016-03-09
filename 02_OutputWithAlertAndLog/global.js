@@ -1,5 +1,9 @@
+// JS Atomic 02
+
+//initial greeting
 alert("Hello! My name is Thorin.");
 
+//console.log statments:
 console.log("My favorite breakfast is a fresh crepe slathered with nutella and sliced bananas.");
 
 console.log("Two cats live with us currently, though the occasional hard luck case will show up.");
