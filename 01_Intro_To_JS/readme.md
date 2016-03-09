@@ -13,6 +13,7 @@ First, you'll need create the files below as specified. Copy the code verbatim i
 Save this HTML as **index.html**:
 
 ```html
+
 <!DOCTYPE html>
 <html>
 
