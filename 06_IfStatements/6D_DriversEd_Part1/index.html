@@ -6,6 +6,37 @@
 </head>
 <body>
   <h1>JS Atomic 06D</h1>
+  <h2>
+    Does it matter what order your if-statements are in?
+  </h2>
+
+  <p>
+    Yes.
+  </p>
+
+  <h2>
+    When testing ranges, did you use <code>&&</code>, <code>||</code>, or something else entirely (e.g. nested if-statements)? If you used <code>&&</code>, why is that a better choice than <code>||</code> (and vice-versa)?
+  </h2>
+
+  <p>
+    When testing ranges, I used the <code>&&</code> operator. This operator is better than <code>||</code> because it will not evaluate <code>true</code> unless both conditionals pass whereas with <code>||</code> if either of the conditionals are <code>true</code> then it will evaluate to <code>true</code>.
+  </p>
+
+  <h2>
+    What types of input produce a value of <code>NaN</code> after parsing? Is it important to check for <code>NaN</code> values? Is it possible for a <code>NaN</code> value to trigger any of the other if-statements? If so, how and why?
+  </h2>
+
+  <p>
+    Any non-integer will produce a value of <code>NaN</code> after parsing. I don't think there's a reason to check for <code>NaN</code> values since the <code>parseInt()</code> serves as a pseudo check by producing either an integer value which can be processed correctly or <code>NaN</code>. I can not think of a time when a <code>NaN</code> value would trigger any of the other if-statments. The only one I could think of would be the zero range if somehow <code>NaN</code> is also evaluated as 0 but that didn't occur during my testing so I don't know if it's possible.
+  </p>
+
+  <h2>
+    What questions do you have?
+  </h2>
+
+  <p>
+    None at the moment. 
+  </p>
   <!-- Answer the questions above here -->
 </body>
 </html>
