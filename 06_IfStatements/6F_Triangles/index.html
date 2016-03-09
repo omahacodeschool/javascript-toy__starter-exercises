@@ -6,6 +6,27 @@
 </head>
 <body>
   <h1>JS Atomic 6F</h1>
+  <h2>
+    What happens if one (or more) of the lengths aren't input correctly and thus end up as <code>NaN</code>?
+  </h2>
+
+  <p>
+    <strong>Expected:</strong> I believe that the <code>NaN</code> value will void any mathematical functions trying to be done on it and cause all of the conditiontals to evaluate as <code>false</code>.
+  </p>
+
+  <p>
+    <strong>Observed:</strong> My initial prediction was correct. 
+  </p>
+
+  <h2>
+    What happens if one of the lengths of the triangle is 0? Two of the lengths? All three lengths?
+  </h2>
+
+  <p>
+    <strong>Expected:</strong> I'm assuming that if one of the numbers equals 0 the conditional statments will still evaluate as <code>true</code> and it will consider the triangle valid. I believe this will also occur if all three lengths are zero, however, in the event that only 2 lengths are zero I postulate that it will return that the triangle is invalid. 
+  </p>
+
   <!-- Answer the questions above here -->
 </body>
 </html>
+
