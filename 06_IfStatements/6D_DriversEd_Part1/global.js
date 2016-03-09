@@ -9,26 +9,30 @@ var messageNA = "Sorry, but that's not a number";
 
 alert("Please open the JavaScript Console in order to review your messages.");
 
-if (age >= 25) {
-  console.log(message25);
-}
-
-if (age >= 21) {
-  console.log(message21);
-}
-
-if (age >=16) {
-  console.log(message16);
-}
-
-if (age <= 15 && age >= 0) {
-  console.log(message15);
+if (isNaN(age)) {
+  console.log(messageNA);
 }
 
 if (age < 0) {
   console.log(messageNeg);
 }
 
-if (age == undefined) {
-  console.log(messageNA);
+if (age <= 15 && age >= 0) {
+  console.log(message15);
 }
+
+if (age >=16) {
+  console.log(message16);
+}
+
+if (age >= 21) {
+  console.log(message21);
+}
+
+if (age >= 25) {
+  console.log(message25);
+}
+
+
+
+
