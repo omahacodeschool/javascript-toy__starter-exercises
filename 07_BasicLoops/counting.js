@@ -12,7 +12,7 @@ increment_by = parseInt(increment);
 
 while (start_at < end_at) {
     alert(count += start_at + ",");
-    start_at + increment_by;
+    start_at += increment_by;
 }
 
 
