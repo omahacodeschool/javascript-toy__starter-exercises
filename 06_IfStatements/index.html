@@ -1,11 +1,11 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>JS Atomic 06</title>
+  <title>JS Atomic 06.A</title>
   <script src="global.js"></script>
 </head>
 <body>
-  <h1>JS Atomic 06</h1>
+  <h1>JS Atomic 06.A</h1>
 </body>
 </html>
   <h2>console.log( "5 == '5' is " + (5 == '5') ); // true</h2>
@@ -37,3 +37,7 @@
   <p></p>
   <h2>What do you call `true` and `false` values? How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h2>
   <p>A true/false data type is a boolean. As I said above, the word "true" is not the same as the return value of true--you can write methods that return "true" if the value is true, or you can make it return "true" if the value is false if you REALLY want to mess with them.</p>
+  <h1>JS Atomic 06.B Passwords</h1>
+  <h2>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization? Did you use `=` or `==` or `===` to compare passwords (or something else)? Why? Would any of the others work? Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h2>
+  <p>My password is case-sensitive, although I bet there are ways to work around that. I used === but tested with == and it seemed to work just as well. You can't use just = because that resets the password and will accept literally anything.</p>
+  <p>Sumeet said Javascript is also PUBLIC, so if a sensitive password were stored in Javascript, someone could just view the page source and have access to that information.</p>
