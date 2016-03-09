@@ -1,4 +1,4 @@
-# JS-Atomic 01: Intro to JS
+## JS-Atomic 01: Intro to JS
 
 You'll do just a tiny bit of actual programming in this atomic: I've provided some Javascript, some HTML, and some CSS. Your job is to stitch 'em all together. Each should live in its own file. The `<link>` to include the CSS into the HTML, and then `<script>` to include the Javascript. If you want to copy/paste, that's encouraged for now.
   
