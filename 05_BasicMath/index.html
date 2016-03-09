@@ -6,15 +6,11 @@
 </head>
 <body>
   <h1>JS Atomic 05 - Basic Math</h1>
-  <ul>
-    <li>Prompt the user for three numbers (make sure to parse them as integers, and make sure to store each in a well-named variable)</li>
-    <li>Output the sum of the three numbers like so: <em>7 + 4 + 12 = 23</em></li>
-    <li>Output the difference when the second and third numbers are subtracted from the first: <em>7 - 4 - 12 = -9</em></li>
-    <li>Output the product of the three numbers: <em>7 * 4 * 12 = 336</em></li>
-    <li>Output the quotient of the first number divided by the second number: <em>7 / 4 = 1.75</em></li>
-    <li>Output the result of incrementing the first number: <em>7++ = 8</em></li>
-    <li>Output the result of decrementing the second number: <em>4-- = 3</em></li>
-  </ul>
-    
+  <h2>What happens when you try to parse the integer out of a string like "I am 9 years old"? How about "9 is my age"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+  <p>It appears that you can parse an integer out of a string as long as that integer is the first character.</p>
+
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>For all the variables that don't have an integer value javascript returns NaN. All of the arithmatic that happens to use a NaN variable also returns NaN.</p>
+   
 </body>
 </html>
