@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+  <!-- Answer the 5 questions above here -->
+</body>
+</html>
+  <h2>What is the data-type of the information that comes in?</h2>
+  <p>All the input from my prompts were strings, even if the user entered an integer. I assume if you needed that number for math-y purposes you could convert the input into another data-type before saving it into the variable</p>
+  <h2>What happens if the user clicks "OK" (or equivalent) without typing anything in?</h2>
+  <p>If the user clicks "OK" without typing anything, the variable is assigned an empty string. If they hit "cancel" it is assigned "null"</p>
+  <h2>How did you choose your variable names?</h2>
+  <p>I think my variable names are pretty clear--I even used "favoritenumber" instead of "favenumber" in an attempt for maximum readability by someone unfamiliar to the code. If you change the questions asked, you should change the variable, so as not to confuse yourself later. If you just change the order of the questions you shouldn't have to reassign, since the assignment of the variable is linked to the question in the prompt, not the order.</p>
+  <h2>In these exercises, we use `prompt()` to collect information, but most websites do that ask for information do not use `prompt()` -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with `prompt()`? Are there any disadvantages? Why might you use `prompt()`?</h2>
+  <p>Most sites use html forms--from what I understand so far, prompts don't use checkboxes, radio buttons, dropdowns, or basically any input types that give the user options. So if you need to give the users options, a form would be more appropriate (also a little unclear of the scope of prompt assigned variables--I feel like they would be inappropriate with sensitive information or adding things to the database). I would use prompt if I wanted to customize the view for the user (with their name, etc) or (if prompts ARE secure) you could ask them to reenter their passwords for views containing sensitive information. </p>
+  <h2>Research `prompt()` -- is there any way to make it so that there are two (or more) fields?</h2>
+  <p>From what I understand, no. Prompts are meant for only one input. Workarounds suggested on the internet include having a popup with a full html form, or apparently there are some things you can do in jQuery that are similar to a multi-input prompt</p>
+  <h2>Shannon Questions:</h2>
+  <p>Are prompt inputs considered secure? Would it be inappropriate for re-entering a password, or adding to a database? Should they only be used for "fluffy" information?</p>
