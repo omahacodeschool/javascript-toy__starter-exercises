@@ -2,6 +2,7 @@
 var age = prompt("Please give me your age.", "Age here");
 
 
+
 if (age >= 25) {
   alert("You can rent a car");
 }
