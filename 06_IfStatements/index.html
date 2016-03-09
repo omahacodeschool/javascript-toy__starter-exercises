@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>JS Atomic 06</title>
-  <script src="age.js"></script>
+  <script src="triangle.js"></script>
+  <!-- <script src="age.js"></script> --> -->
   <!-- <script src="password.js"></script> -->
-  <!-- <script src="number.js"></script> -->
+  <!-- <script src="number.js"></script>  -->
 </head>
 <body>
   <h1>JS Atomic 06</h1>
@@ -108,6 +109,24 @@ I used '==' out of habit but all of them seem to work as well when I test them.
   I think just going in and swapping the numbers would be easier. It's a personal preference, or at least that's how I see it. If you have variables it seems less easy to maintain because then you have to look at the variables and what they're set to and make sure you're changing the right variables to the correct number. It's an extra bit of mess in my opinion.
 </p>
 
+<h3>
+  - What happens if one (or more) of the lengths aren't input correctly and thus end up as `NaN`?
+</h3>
+<p>
+If one or more lengths come in as NaN it just tells me that it was not a valid triangle. The console shows 'NaN compared to 5' and 'NaN compared to 10' which is the total of two numbers compared to the third number.
+</p>
+ <h3>
+  - What happens if one of the lengths of the triangle is `0`? Two of the lengths? All three lengths?
+</h3>
+<p>
+It will say it's not a valid triangle thanks the the math that's set up in the code.
+</p>
+<h3>
+  - What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?
+</h3>
+<p>
+it will still try to do the math on the numbers involved. It's something that can be fixed by adding some if statement.
+</p>
 
 
 
