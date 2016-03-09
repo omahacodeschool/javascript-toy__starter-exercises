@@ -1,6 +1,6 @@
-var name = "Jillian";
-var age = 32;
-var hairColor = "brown";
+var name = "Mr. Baby";
+var age = 8;
+var hairColor = "black";
 
 alert("My name is " + name)
 alert("My age is " + age)
