@@ -36,7 +36,7 @@ Once you're done with this, answer the following questions, formatted however yo
 <html>
 <head>
   <title>JS Atomic 03</title>
-  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
 </head>
 <body>
   <h1>JS Atomic 03</h1>

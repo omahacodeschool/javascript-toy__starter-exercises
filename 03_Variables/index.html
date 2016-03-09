@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 03</h1>
+<h3>1. Why don't you need to use the `var` keyword every time you use a variable (right now, we only use it when we create the variable)? What does `var` do?</h2>
+<p>You don't need to use 'var' every time you use a variable because you only do so when creating a variable. 
+Unlike Ruby, which seems to know that the thing to the left of the equal sign is a variable, in javascript, 'var' is the equivalent of going
+"Okay computer, tell my program that we're going to make a variable now." After the initial creation, the program knows that the collection of characters you used is now a variable.
+and calling 'var' again would be overkill.</p>
+
+<h3>2. What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h3>
+<p>If you attempt to output a variable like 'var test;' and then call it in an alert, it will return a value of 'undefined' when called. For me, the program still seemed to run as intended. I didn't get any error messages in console, either.
+However, I wasn't trying to force that variable to interact with another variable (like a + b), which I am sure would lead to some issues. </p>
+
+<h3>3. What questions do you have?</h3>
+<p> I was looking into how to get variables to nest in strings like we did in Ruby. ( "I AN EXAMPLE #{VAR}" )
+I looked to the internet. The general response was that it previously wasn't possible in older browsers. However, people were saying that it now should be possible
+when using formats like 'THIS IS ANOTHER ${example}'.
+...But it  still didn't seem to work for me. I then tried looking into if the functionality just didn't work with alerts or even stringONstring business, but wasn't able to find anything absolutely concrete on the topic. </p>
+
+</body>
+</html>
