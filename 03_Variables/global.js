@@ -2,6 +2,6 @@ var name = "Mr. Baby";
 var age = 8;
 var hairColor = "black";
 
-alert("My name is " + name)
-alert("My age is " + age)
-alert("My hair color is " + hairColor)
+console.log("My name is " + name)
+console.log("My age is " + age)
+console.log("My hair color is " + hairColor)
