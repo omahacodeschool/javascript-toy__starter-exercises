@@ -1,6 +1,6 @@
 var inputnumber = prompt("What is your age?")
 var age = parseInt(inputnumber)
-if ( IsNaN(age) === true ){
+if ( isNaN(age) ){
     alert("Sorry I don't think that's a number");
 }
 if (age < 0) {
@@ -18,8 +18,6 @@ if (age >= 25) {
 if (age >= 21) {
     console.log("Please don't drink and drive");
 }
-console.log("inputnumber = " + inputnumber)
-console.log("age = " + age)
 
 //*Age 25 and older**: "You can rent a car"
 //*Age 21 and older**: "Please don't drink and drive"
