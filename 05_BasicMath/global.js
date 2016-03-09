@@ -6,16 +6,16 @@ var userNumberB = prompt("One more number, please!", 11);
 
 var userNumberC = prompt("Ok, nearly there. One last number, if you would?", 36);
 
-alert("Your numbers are " + userNumberA + ", " + userNumberB + ", and " + userNumberC);
 
-console.log("User's numbers are " + userNumberA + ", " + userNumberB + ", and " + userNumberC);
-
-
-// The following is the inspecting of what is output from the prompt, and the conversion of Strings to Numbers.__________________________________
+// The following is the inspecting of what is output from the prompt, the parsing out of non-number characters, and the conversion of the resulting Strings into Numbers.__________________________________
 
 console.log(typeof userNumberA);
 console.log(typeof userNumberB);
 console.log(typeof userNumberC);
+
+userNumberA = userNumberA.replace ( /[^\d.]/g, '' );
+userNumberB = userNumberB.replace ( /[^\d.]/g, '' );
+userNumberC = userNumberC.replace ( /[^\d.]/g, '' );
 
 userNumberA = Number(userNumberA);
 userNumberB = Number(userNumberB);
@@ -24,6 +24,15 @@ userNumberC = Number(userNumberC);
 console.log(typeof userNumberA);
 console.log(typeof userNumberB);
 console.log(typeof userNumberC);
+
+
+// Below is the alert and the log that shows the corrected input.
+
+alert("Your numbers are " + userNumberA + ", " + userNumberB + ", and " + userNumberC);
+
+console.log("User's numbers are " + userNumberA + ", " + userNumberB + ", and " + userNumberC);
+
+
 
 // Below are the operations. I have included alerts to User and console logs for each.
 
@@ -65,7 +74,8 @@ console.log(userNumberA + " / " + userNumberB + " = " + numberQuotient);
 
 //__________________________++__________________________________
 
-numberIncrement = userNumberA++ ;
+numberIncrement = userNumberA;
+numberIncrement++;
 
 alert("Your first number has been incremented by 1. " + userNumberA + " becomes the more-desirable " + numberIncrement + " !");
 
@@ -74,20 +84,9 @@ console.log(userNumberA + " +1 = " + numberIncrement);
 
 //__________________________--__________________________________
 
-numberDecrement = userNumberA-- ;
+numberDecrement = userNumberB;
+numberDecrement--;
 
-alert("Your first number has been decremented by 1. " + userNumberA + " becomes the less-desirable " + numberDecrement + " !");
+alert("Your second number has been decremented by 1. " + userNumberB + " becomes the less-desirable " + numberDecrement + " !");
 
-console.log(userNumberA + " -1 = " + numberDecrement);
-
-
-
-
-
-// - Prompt the user for three numbers (make sure to parse them to integers (In Ruby, this would be accomplished with `.to_i`.), and make sure to store each in a well-named variable)
-// - Output the sum of the three numbers in a string like so: `7 + 4 + 12 = 23`
-// - Output the difference when the second and third numbers are subtracted from the first: `7 - 4 - 12 = -9`
-// - Output the product of the three numbers: `7 * 4 * 12 = 336`
-// - Output the quotient of the first number divided by the second number: `7 / 4 = 1.75`
-// - Output the result of incrementing the first number: `7++ = 8`
-// - Output the result of decrementing the second number: `4-- = 3`
+console.log(userNumberB + " -1 = " + numberDecrement);
