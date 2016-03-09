@@ -1,0 +1,61 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 02</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+
+</head>
+<body>
+  <h1>Questions for JS Atomic 02</h1>
+
+  <h2>What's the difference between alert() and console.log()?</h2>
+  <p>
+    The alert() function brings up a message box that is intended for the user to see (and the user must click "ok" to dismiss the message). The console log is not for the user to see. It is similar to "puts" in Ruby.
+  </p>
+
+  <h2>
+    What's one situation where you might use an `alert()` to tell the user something?
+  </h2>
+  <p>
+    Alerts probably shouldn't be used all that often. I would think they should only be used when absolutely necessaary. In general, they should be used in scenarios where it is vital that the user is given some information or warning.
+  </p>
+
+  <p>
+    A more specific example of when you might want to use an alert would be as follows: Say we have a website with a shopping cart and in order for the user's selections to be saved, they most "save" or "submit" the selected items first. In this example, if we had a user that selected several items but never clicked "save" and <em>then</em> tried to close the browser window, we might want to use an alert to notify the user that any selections they have made will be lost upon closing, if they do not click the "save" button.
+  </p>
+
+  <h2>
+    Would it make sense to use console.log() to tell the user things? Why or why not?
+  </h2>
+
+  <p>
+    No. Definitely not. Probably the main reason - to which I made reference above - is that the console is not designed to be viewed by the user (unless that user happens to be a dev... but I digress). The console is for developers and is a helpful tool for detecting bugs, confirming that things are working correctly and so on.
+  </p>
+
+
+  <h2>
+    What's one way that console.log() might be a good tool for you to use
+  </h2>
+
+  <p>
+    As I stated above, the console is great for debugging. If somewhere in our javascript we have a function that is supposed to do something when a button is clicked, and let's say nothing was happening, we could add a console.log() statement into our code to inform us if that button was clicked. If the console does not show the console.log statement, this might tell us that the button was never clicked in the first place. Of course, there are probably much more technical ways it could be used that I will hopefully discover soon."
+  </p>
+
+  
+  <h2>
+    When do the `console.log()` statements get run? Is it before the first `alert()` gets displayed? After it gets displayed but before the user clicks "OK" (or equivalent)? After the user clicks to close the dialog box? A different time? How did you find out for sure?
+  </h2>
+
+  <p>
+    When I open up my console and Command-R (to refresh the page), I can clearly see that the console is not showing the console.log statements <em>until</em> I've clicked the 'OK' from the first alert box. Once I do this, the console.log statements can be seen, even <em>if</em> I do not click "OK" from the next alert box.
+  </p>
+
+  <h2>What questions do you have?</h2>
+  <p>I guess I'd like to know what can be done in the console itself. Once it is opened, it almost appears that it can be used as a little sandbox (something like repl.it or Pry. Is this true?)
+  </p>
+
+
+  <!-- etc. -->
+</body>
+</html>
