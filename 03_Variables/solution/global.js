@@ -1,6 +1,6 @@
 //Solution to JS Atomic 03 - Variables
 
-var name = "Andrew";
+//var name = "Andrew";
 var age = 29;
 var hairColor = "brown";
 
