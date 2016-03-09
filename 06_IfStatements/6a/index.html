@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>JS Atomic 06a</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06a - Relational and Equality Operators</h1>
+  <h2>Recorded Answers</h2>
+  <p>console.log( "5 == 'five' is " + (5 == 'five') ); // false</p>
+  <p style="color:blue">== will not coerce 'five' into an integer. 5 and 'five' are not equal</p>
+  <p>console.log( "5 == '6' is " + (5 == '6') ); // false</p>
+  <p style="color:blue"> while '6' is being coerced into 6. In no universe are 5 and 6 ever equal</p>
+  <p>console.log( "5 === '5' is " + (5 === '5') ); // true</p>
+  <p style="color:blue">I 5 is an integer and '5' is a string so the === will return false because they are not of the same type</p>
+  <p>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) ); // true</p>
+  <p style="color:blue"> == can also check equality against some arithmetic</p>
+  <p>console.log( "5 == 5 is " + (5 == 5) ); // true</p>
+  <p style="color:blue"> 5 equals 5 all the time </p>
+  <p>console.log( "5 === 5 is " + (5 === 5) ); // true</p>
+  <p style="color:blue">style="color:blue" 5 and 5 are both integers AND the are equal </p>
+  <p>console.log( "true == 'true' is " + (true == 'true') ); // false</p>
+  <p style="color:blue"> == does not coerce strings into booleans</p>
+  <p>console.log( "true === 'true' is " + (true === 'true') ); // false</p>
+  <p style="color:blue"> == 'true' and true are not the same type</p>
+  <p>console.log( "true == false is " + (true == false) ); // false</p>
+  <p style="color:blue"> true never equals false, thats silly.</p>
+  <p>console.log( "5 == 12 is " + (5 == 12) ); // false</p>
+  <p style="color:blue">5 never equals 12, thats silly</p>
+  <p>console.log( "5 != 12 is " + (5 != 12) ); // true</p>
+  <p style="color:blue"> != means 5 does not equal 12 which is true</p>
+  <p>console.log( "5 < 12 is " + (5 < 12) ); // true</p>
+  <p style="color:blue">5 is less than 12, all the time</p>
+  <p>console.log( "5 <= 12 is " + (5 <= 12) ); // true</p>
+  <p style="color:blue">like Ruby <= means less than or equal to</p>
+  <p>console.log( "5 > 12 is " + (5 > 12)); // false</p>
+  <p style="color:blue">5 is not greater than 12, thats silly</p>
+  <p>console.log( "5 >= 12 is " + (5 >= 12)); // false</p>
+  <p style="color:blue">5 is not greater or equal to 12</p>
+  <h2>What do you call true and false values?</h2>
+  <p>True and false values are called booleans</p>
+
+  <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
+  <p>They have the same characters but thats it. "true" will be treated like a string of the letters t,r,u,e while true is a boolean and can be used in functions.</p>
+   
+</body>
+</html>
