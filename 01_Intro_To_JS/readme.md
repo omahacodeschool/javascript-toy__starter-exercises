@@ -4,7 +4,7 @@ You'll do just a tiny bit of actual programming in this atomic: I've provided so
   
 No need to understand what's happening in the Javascript. Do read through it and see what you can understand, but don't feel bad if you don't understand much, or even anything.
 
-No need to think critically about the CSS at all.
+No need to think critically about the CSS at all. 
 
 ---
 
