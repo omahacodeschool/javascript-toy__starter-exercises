@@ -1,7 +1,7 @@
-
+//Variables
+var number = prompt("What is your favorite number?", "Type the number here.");
 var name = prompt("What is your name?", "Type your name here.");
 var hometown = prompt("What is your hometown?", "Type the town here.");
-var number = prompt("What is your favorite number?", "Type the number here.");
 
 
 //Console.log statment:
