@@ -1,9 +1,10 @@
-var password = "monkeybrains"
-//it's a beautiful funny word and i want to keep using it.
-var passwordattempt = prompt("What's the password, chump?")
-if (passwordattempt === password) {
+var secretnumber = 23
+var inputnumber = prompt("Guess what number I'm thinking of!")
+secretnumberattempt = parseInt(inputnumber)
+if (secretnumberattempt === secretnumber) {
     alert("good job!")
 } else { 
-    alert("sorry the password is " + password)
+    alert("sorry the secret number is " + secretnumber)
 }
+
  
