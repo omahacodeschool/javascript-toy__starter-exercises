@@ -1,6 +1,6 @@
 var secretnumber = 23
 var inputnumber = prompt("Guess what number I'm thinking of!")
-secretnumberattempt = parseInt(inputnumber)
+var secretnumberattempt = parseInt(inputnumber)
 if (secretnumberattempt === secretnumber) {
     alert("good job!")
 } else { 

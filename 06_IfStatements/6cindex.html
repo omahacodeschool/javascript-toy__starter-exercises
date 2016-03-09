@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06.A</title>
+  <script src="6cglobal.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06.C Secret Numbers</h1>
+</body>
+</html>
+  <h2>- If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?</h2>
+  <p>If you don't use parseInt(), you can't use === or it won't recognize the input. == can see if a string contains just that integer. === can't. (=== is more accurate, though, and faster)</p>
+  <h2>If you collect the user's input as an integer (i.e. by using `parseInt()` to turn it into an integer), can you use `==` to compare? `===`? In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+  <p>If you use parseInt() then you can use either == or ===, since it can read both. It will also register if they type their guess the way they would say their guess, like "23?"</p>
+  <h2>WHAT'S THE DIFFERENCE BETWEEN == AND ===</h2>
+  <p>From what I understand, === is faster and more accurate. === requires everything to be EXACTLY the same or else it rejects it. == will convert things being compared into the same TYPE first (which is why == can read "5" as 5) and while this could be useful, everyone on the internet seems to advise against it.</p>

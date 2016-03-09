@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06.A</title>
+  <script src="6aglobal.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06.A</h1>
+</body>
+</html>
+  <h2>console.log( "5 == '5' is " + (5 == '5') ); // true</h2>
+  <p>This statement would be false in Ruby. This is helpful </p>
+  <h2>console.log( "5 == 'five' is " + (5 == 'five') );//false</h2>
+  <p>It's not magic, though. It can't "read" numbers unless you write methods to help it do so.</p>
+  <h2>console.log( "5 == '6' is " + (5 == '6') );//false</h2>
+  <p>I mean, this only makes sense, right?</p>
+  <h2>console.log( "5 === '5' is " + (5 === '5') );//false</h2>
+  <p>OKAY. So, === is like == in Ruby. The documentation I saw said == in JS was weird and this could be what they were talking about.</p>
+  <h2>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) );//false?</h2>
+  <p>NOPE, it's TRUE. I thought the == would mess that up but I guess not.</p>
+  <h2>console.log( "5 == 5 is " + (5 == 5) );//true</h2>
+  <p>Again, I think this only makes sense?</p>
+  <h2>console.log( "5 === 5 is " + (5 === 5) );//true</h2>
+  <p>...
+  <h2>console.log( "true == 'true' is " + (true == 'true') );//false</h2>
+  <p>glad I'm right about this one. "true" is a word that represents true but is not, necessarily, TRUE. (deep, dude)</p>
+  <h2>console.log( "true === 'true' is " + (true === 'true') );//false</h2>
+  <p>Again, the === is asking, not setting, in JavaScript.</p>
+  <h2>console.log( "true == false is " + (true == false) );//false</h2>
+  <p>This also makes sense, bc these are not the strings that represent these words, but the words themselves.</p>
+  <h2>console.log( "5 == 12 is " + (5 == 12) );//false</h2>
+  <h2>console.log( "5 != 12 is " + (5 != 12) );//true</h2>
+  <h2>console.log( "5 < 12 is " + (5 < 12) );</h2>
+  <h2>console.log( "5 <= 12 is " + (5 <= 12) );//true</h2>
+  <h2>console.log( "5 > 12 is " + (5 > 12));//false</h2> 
+  <h2>console.log( "5 >= 12 is " + (5 >= 12));//false</h2> 
+  <p></p>
+  <h2>What do you call `true` and `false` values? How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h2>
+  <p>A true/false data type is a boolean. As I said above, the word "true" is not the same as the return value of true--you can write methods that return "true" if the value is true, or you can make it return "true" if the value is false if you REALLY want to mess with them.</p>
