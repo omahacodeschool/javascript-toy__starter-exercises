@@ -1,0 +1,42 @@
+<!doctype HTML>   
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <script type="text/javascript" src="guess_num.js"></script>
+
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+  <h3>What do you call true and false values?</h3>
+  
+  <p>Booleans</p>
+
+  <h3>How is true similar or dissimilar from "true"? Can they be used in the same way?</h3>
+  
+  <p>"true" acts as a string</p>
+
+  <h3>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?</h3>
+   <p>Must be exact</p>
+  <h3>Did you use = or == or === to compare passwords (or something else)? Why? Would any of the others work?</h3>
+
+  <p>When comparing to see if two things are equal you can use the "==" "===" operators. "==" compares equal "===" is strict equal: Returns true if the operands are equal and of the same type </p>
+
+  <h3>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h3>
+  <p>Cause that information exisits on the client end and thus wouldn't secure</p>
+
+  <h3>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h3>
+  <p>In this case only == will work.The strict equal will only work if the are both things are the same type. The input values of the prompt box is a string.</p>
+
+  <h3>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h3>
+  <p>Yes. I'd say it was better to us === operator.</p>
+
+  <h3>What is the difference between == and ===?</h3>
+  <p> Answer above</p>
+
+  <h3>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h3>
+  <p>I'd say using the "===" because it seems like it would be more fool proof as the program grew.</p>
+
+
+  <!-- Answer the 3 questions above here -->
+</body>
+</html>
