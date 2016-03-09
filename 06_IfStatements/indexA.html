@@ -8,85 +8,96 @@
 <body>
   <h1>JS Atomic 06A</h1>
 
-<h2>console.log( "5 == '5' is " + (5 == '5') ); // true</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == '5' is " + (5 == '5') );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 == 'five' is " + (5 == 'five') );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == 'five' is " + (5 == 'five') );</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
 
-<h2>console.log( "5 == '6' is " + (5 == '6') );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == '6' is " + (5 == '6') );</h2>
+    <p>
+    Guess: true; Answer: false
+    I have no idea why I guessed that 5 would equal 6 in any case. Brain break coming up ASAP. Regardless of the integer-to-string comparison, 5 and 6 are different numbers. Who'd have thunk?
+    </p>
 
-<h2>console.log( "5 === '5' is " + (5 === '5') );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 === '5' is " + (5 === '5') );</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
 
-<h2>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 == 5 is " + (5 == 5) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == 5 is " + (5 == 5) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 === 5 is " + (5 === 5) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 === 5 is " + (5 === 5) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "true == 'true' is " + (true == 'true') );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "true == 'true' is " + (true == 'true') );</h2>
+    <p>
+    Guess: true; Answer: false
+    This surprised me because I had read that with == integers can be compared to strings. I know it wouldn't work with ===, but I would've expected that this == stipulation would also allow comparison between a string and a boolean.
+    </p>
 
-<h2>console.log( "true === 'true' is " + (true === 'true') );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "true === 'true' is " + (true === 'true') );</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
 
-<h2>console.log( "true == false is " + (true == false) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "true == false is " + (true == false) );</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
 
-<h2>console.log( "5 == 12 is " + (5 == 12) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 == 12 is " + (5 == 12) );</h2>
+    <p>
+    Guess: true; Answer: false
+    Again, why did I guess that two different numbers would equal each other? Ugh. I think the Sublime Text view threw me off; I guess I should've run the code in the controller before recording my guesses.
+    </p>
 
-<h2>console.log( "5 != 12 is " + (5 != 12) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 != 12 is " + (5 != 12) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 < 12 is " + (5 < 12) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 < 12 is " + (5 < 12) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 <= 12 is " + (5 <= 12) );</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 <= 12 is " + (5 <= 12) );</h2>
+    <p>
+    Guess: true; Answer: true
+    </p>
 
-<h2>console.log( "5 > 12 is " + (5 > 12));</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 > 12 is " + (5 > 12));</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
 
-<h2>console.log( "5 >= 12 is " + (5 >= 12));</h2>
-<p>
-Guess: 
-</p>
+    <h2>console.log( "5 >= 12 is " + (5 >= 12));</h2>
+    <p>
+    Guess: false; Answer: false
+    </p>
+
+
+
+    <h2>What do you call true and false values?</h2>
+    <p>Booleans (so long as they're not in the form of a string, I think?)</p>
+    <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
+    <p>It seems like they can NOT be used in the same way. "true" just happens to be four letters strung together, while true the Boolean has a deeper meaning to Javascript.</p>
+
 
 
 </body>
