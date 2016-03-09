@@ -72,6 +72,13 @@ alert("Your first number has been incremented by 1. " + userNumberA + " becomes 
 console.log(userNumberA + " +1 = " + numberIncrement);
 
 
+//__________________________--__________________________________
+
+numberDecrement = userNumberA-- ;
+
+alert("Your first number has been decremented by 1. " + userNumberA + " becomes the less-desirable " + numberDecrement + " !");
+
+console.log(userNumberA + " -1 = " + numberDecrement);
 
 
 
