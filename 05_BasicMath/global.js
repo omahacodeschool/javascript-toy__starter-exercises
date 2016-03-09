@@ -5,6 +5,7 @@ var secondNum = parseInt(prompt("Give me a second number."));
 
 var thirdNum = parseInt(prompt("Give me a third number."));
 
+//displaying arithmetic in console
 console.log( firstNum + " + " + secondNum + " + " + thirdNum + " = " + (firstNum + secondNum + thirdNum) );
 console.log( firstNum + " - " + secondNum + " - " + thirdNum + " = " + (firstNum - secondNum - thirdNum) );
 console.log( firstNum + " * " + secondNum + " * " + thirdNum + " = " + (firstNum * secondNum * thirdNum) );
