@@ -10,10 +10,10 @@ No need to think critically about the CSS at all.
 
 First, you'll need create the files below as specified. Copy the code verbatim into files names as indicated.
 
-Save this HTML as **index.html**:
+Save this HTML  as **index.html**:
 
 ```html
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
 <head>
