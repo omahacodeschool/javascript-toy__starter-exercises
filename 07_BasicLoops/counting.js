@@ -26,6 +26,12 @@ while (i <= 1) {
   console.log( i + " " + "bottle of beer on the wall" + " " + i + " " + "bottle of beer. Take one down, pass it around." + " " + i + " " + "bottle of beer on the wall."); 
 }
 
-while (i / 3) {
+while (i < end && i / 3) {
   console.log ("fizz")
+  i++;
+}
+
+while (i < end && i / 5) {
+  console.log ("buzz")
+  i++;
 }
