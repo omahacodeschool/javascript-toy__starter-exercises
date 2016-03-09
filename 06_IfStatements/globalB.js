@@ -1,9 +1,9 @@
-var password = "bubblegumpopprincess"
+var password = "bubblegumpopprincess";
 
-var params = prompt("Enter password:")
+var params = prompt("Enter password:");
 
 if (params == password) {
-  alert("Good work.")
+  alert("Good work.");
 } else {
-  alert("Sorry, the password is actually " + password)
+  alert("Sorry, the password is actually " + password);
 }

@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06D</title>
+  <!-- Include your external Javascript file here -->
+  <script src="globalD.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06D</h1>
+
+  <h2>Does it matter what order your if-statements are in?</h2>
+  <p>No.</p>
+
+  <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h2>
+  <p>I used && but not ||. There are plenty of situations in which either would be useful, but here I didn't see any reason to use ||. I used && only in the situation where I was alerting someone that they can't drive just to make sure that they also entered their age as more than 0.</p>
+
+  <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
+  <p>I got the NaN to trigger after entering both a single letter or a string of letters into the field. I'd say it's important to check--human error is always worth taking into account. I can't see how an NaN could trigger any of my other if statements. The only way I can see it happening is maybe some combination of string-format numbers entered in conjunction with the === operation.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>I'd love to know why my code keeps working even though I ALWAYS forget the semi-colons. More realistically I'd like to know what use the semi-colons are if the code works fine without them.</p>
+
+</body>
+</html>
