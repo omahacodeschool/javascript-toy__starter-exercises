@@ -12,7 +12,10 @@ var difference = (firstNum - secondNum - thirdNum);
 var product = (firstNum * secondNum * thirdNum);
 var divideFirstTwo = (firstNum / secondNum);
 
-
+//console.log
+console.log(firstNum)
+console.log(secondNum)
+console.log(thirdNum)
 //alert() outputs
 alert("The sum of all three numbers is " + sumOfAll + ".");
 
