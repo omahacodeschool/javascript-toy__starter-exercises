@@ -11,8 +11,6 @@ var sumOfAll = (firstNum + secondNum + thirdNum);
 var difference = (firstNum - secondNum - thirdNum);
 var product = (firstNum * secondNum * thirdNum);
 var divideFirstTwo = (firstNum / secondNum);
-var incrementFirstNum = (firstNum++ );
-var decrementSecondNum = (secondNum-- );
 
 
 //alert() outputs
@@ -24,6 +22,6 @@ alert("The product of all three numbers is " + product + ".");
 
 alert("The quotient of " + firstNum + " divided by " + secondNum + " is " +divideFirstTwo + ".");
 
-alert("The result of incrementing " + firstNum + " is " + incrementFirstNum + ".");
+alert("The result of incrementing " + firstNum + " is " + (firstNum+= 1) + ".");
 
-alert("The result of decrementing " + secondNum + " is " + decrementSecondNum + ".");
+alert("The result of decrementing " + secondNum + " is " + (secondNum-= 1) + ".");
