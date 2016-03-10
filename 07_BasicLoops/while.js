@@ -1,10 +1,6 @@
 //JS While loop
 
-var text = "";
-i = 0;
-
-while (i < 10) {
-    alert(text += i + ",");
-    i++;
+for (var i = 0; i < 10; i++) {
+    alert(i);
 }
 
