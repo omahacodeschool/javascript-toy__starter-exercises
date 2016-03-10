@@ -9,15 +9,15 @@
   <h1>JS Atomic 06 C</h1>
 
   <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
-  <p></p>
+  <p>Yes, it does work with '=='. I first tried it with '===' and it works only if you first convert the user input to an Integer. It's easier with the '==' but I think it would be more strict to use '===' as it compares both value and data type.</p>
 
   <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h2>
-  <p></p>
+  <p>Yes, without converting the input to an Integer, the '==' works but not the '==='. For the reason above, I believe the '===' to be more secure.</p>
 
   <h2>What is the difference between == and ===?</h2>
-  <p></p>
+  <p>From research, '==' compares only value while '===' compares both value and data type, requiring both to be true to evaluate to true.</p>
 
   <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
-  <p></p>
+  <p>I'm thinking that it would be alright to leave their input as a String since JS converts the operands being compared into different datatypes to reach its conclusion of 'truthiness'.</p>
 </body>
 </html>
