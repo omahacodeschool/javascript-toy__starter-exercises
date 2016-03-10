@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+<script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+<h2>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use `typeof` and `console.log()` to help with this.</h2>
+<p>The data type of the information provided by prompt is either null or a string.  As such, when the user inputs a number, it outputs as a string.  So, if you wanted to do something with the number as a number, you'd need to convert it to either a float or an integer before doing that.  It seems though like JS will, in some circumstances, if the string looks like it contains a number, do the conversion by itself behind the scenes.  I'm not entirely sure how this happens, but heard it referenced when I was looking through documentation.</p>
+
+<h2>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+<p>Prompt will output one of three things, null, a string, or an empty string.  So, I think, leaving it blank would assign an empty string to the variable.</p>
+
+<h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+<p>Well, for this situation, choosing the variable names was fairly simple.  I just used what they were refering to as their name.  So, name was "name" and so on.  Granted, "name" is a bit vague and could be further specified to "userName" or similar, but for the purposes of this exercise, "name" seemed expedient.  So, yes, if I gave someone a list of the variable names they could take a reasonable stab at sorting out what the variables stored.</p>
+
+<h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+<p>Simply put, yes and yes.  If the object of naming the variables as we do is to provide insight into what their function is, you'd definitely want to make sure that if you changed what they were referring to that you likewise changed what you called them.  It wouldn't make sense to have a variable called "name" if it actually referred to their age.</p>
+
+<h2>In these exercises, we use `prompt()` to collect information, but most websites do that ask for information do not use `prompt()` -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with `prompt()`? Are there any disadvantages? Why might you use `prompt()`?</h2>
+<p>We've already had experience in using the method you're most likely to see, i.e., HTML forms.  Their are any number of advantages to doing it that way as opposed to doing it with a prompt.  Among them, you have more control over the data type of the information passed, you can gather a greater variety of information within a single form, and a fair number of people out there simply find popups annoying.  As for disadvantages, I'm not sure, I suppose that if you placed the form badly, it might go unnoticed and thus not get filled out.  So, that might, if anything be an advantage of using a prompt, because it is actually prompting the user to enter information, it could be used to request information that's really vital to continuing on the website.  Still, the fact that you don't see a ton of prompts out there today while wandering around the web seems to speak to a relative lack of utility in comparison with forms.</p>
+
+<h2>Research `prompt()` -- is there any way to make it so that there are two (or more) fields?</h2>
+<p>Yes and no.  You can't do it using JS with your browser's native capabilities, but it seems like you can manage it using JQuery.  Now, since I don't know JQuery, for me, the answer is a definitive "no, I can't do this."</p>
+
+<h2>What questions do you have?</h2>
+<p>No questions at this time.</p>
+
+</body>
+</html>
