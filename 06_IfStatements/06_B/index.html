@@ -8,12 +8,16 @@
 <body>
   <h1>JS Atomic 06B</h1>
   
-  <h2>Password prompts, comparisons, and alerts.</h2>
+<h2>Password prompts, comparisons, and alerts.</h2>
 
-<h2>What do you call `true` and `false` values?</h2>
-<p>Truthy or falsy, respectively.</p>
-<h2>How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h2>
-<p>Super weird that javascript tries to convert the objects on either side of an operand to a another data type. I think if you did "true" == true it would show false because it would convert the boolean true into a number and the string will get converted to nAn. Why doesn't it convert the boolean to a String instead of a number? Not super sure. I'm sure there's a reason. Probably something to do with the nature of booleans.</p>
+<h2>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?</h2>
+<p>No flexibility in capitalization that I can find.</p>
+
+<h2>Did you use `=` or `==` or `===` to compare passwords (or something else)? Why? Would any of the others work?</h2>
+<p>I used '=='. '=' would not have worked, or rather the user would have gotten a lot of great job messages. '===' would also have worked assuming your stored password variable doesn't get converted from a String, which apparently javascript does willy nilly so I might be a tad careful.</p>
+
+<h2>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h2>
+<p>It's not, you should put your credit card number, expiration date, and CVV in a js file and let me know what your website URL is. Just kidding it's a terrible idea you can see the js for a page using your browser's view source tool. Quite literally you can click a link to open the js file that is being referenced on a web page.</p>
 
 </body>
 </html>

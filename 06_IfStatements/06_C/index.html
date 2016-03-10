@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06C</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06C</h1>
+  
+<h2>6C: Guess a Number</h2>
+
+<h2>Pick a number and hardcode it into your program (like you did with the password above: `var secretNumber = 23;`). Prompt the user for a number, then display an alert letting the user know if their answer was correct or incorrect (much like you did with the "Password Game" atomic).</h2>
+
+<h2>If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?</h2>
+<p>The == comparison operator in Javascript will work because Javascript coerces the String to a number to compare the values.</p>
+
+<h2>If you collect the user's input as an integer (i.e. by using `parseInt()` to turn it into an integer), can you use `==` to compare? `===`? Which is better in this case?</h2>
+<p>Yes, either way works. == also works without turning it into an integer. === you must turn it into an integer.</p>
+
+<h2>What is the difference between `==` and `===`?</h2>
+<p>=== it must be equal in value and type, but remember that js coerces the type when using == to compare value. </p>
+
+<h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+<p>I am not sure how infallible this type coercion thing js does is. But I imagine it's not perfect. So, perhaps converting to an integer yourself might be preferable. That being said, that may be tricky in some circumstances.</p>
+
+</body>
+</html>
+
+
