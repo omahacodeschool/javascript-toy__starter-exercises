@@ -9,15 +9,15 @@
   <h1>JS Atomic 06 D</h1>
 
   <h2>Does it matter what order your if-statements are in?</h2>
-  <p></p>
+  <p>As far as I can tell, there isn't a difference in the order of the 'if' statements.</p>
 
   <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h2>
-  <p></p>
+  <p>I did happen to user '&&' and believe that it's a better choice because it requires that both statements to evaluate to 'true' for the whole to be 'true'.</p>
 
   <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
-  <p></p>
+  <p>I found that letters and numbers with special characters (e.g.- $, #, %, etc.) before the number evaluated to 'NaN'. Special characters occuring after or in the middle the number were ignored and only the digits before the first special character were collected. I think it's important to check for 'NaN' values to ensure the integrity of the information being dealt with and to ensure that instances described above don't evaluate as a 'false-true'.</p>
 
   <h2>What questions do you have?</h2>
-  <p></p>
+  <p>When checking that the user input wasn't equal to 'NaN' with '===', the 'NaN' response wasn't returned though the alert prompt triggered. Upon investigation in Debug, the input did evaluate to 'NaN'. Why didn't it work?</p>
 </body>
 </html>
