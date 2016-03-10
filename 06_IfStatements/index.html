@@ -1,0 +1,138 @@
+ <!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06</title>
+  <script src="triangle.js"></script>
+  <script src="age.js"></script> -->
+  <script src="password.js"></script>
+  <script src="number.js"></script> 
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+
+<h3>
+  - What do you call `true` and `false` values?
+</h3>
+<p>
+  True and false values are known as booleans.
+</p>
+<h3>
+  - How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?
+</h3>
+<p>
+  True and "true" differ in that one can be used to define if something is true and the other is just a string. 
+</p>
+<h3>
+  - Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?
+</h3>
+<p>
+  It does matter and it does have to match exactly. I tried all caps and then just one letter and both were rejected.
+</p>
+<h3>
+  - Did you use `=` or `==` or `===` to compare passwords (or something else)? Why? Would any of the others work?
+</h3>
+<p>
+I used '==' out of habit but all of them seem to work as well when I test them.
+</p>
+<h3>
+  - Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?
+</h3>
+<p>
+  It seems like a bad idea because there doesn't appear to be any security type features to keep that password safe.
+</p>
+<h3>
+  - If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?
+</h3>
+<p>
+  If you use '==' it does succesfully turn the input into an integer without using the parseInt option. (By the way that is so awesome!). The '===' does not work to turn it into an integer so the best way would be '=='.
+</p>
+<h3>
+  - If you collect the user's input as an integer (i.e. by using `parseInt()` to turn it into an integer), can you use `==` to compare? `===`? Which is better in this case?
+</h3>
+<p>
+  If you use '==' or '===' with the parseInt it seems to work just fine. Both options seem viable.
+</p>
+<h3>
+  - What is the difference between `==` and `===`?
+</h3>
+<p>
+  '=='' attempts to convert the values to the same type before testing if they're the same. '==='' does not do this; it requires objects to be of the same type to be equal. 
+</p>
+<h3>
+  - In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?
+</h3>
+<p>
+  I would say just to make a cleaner code approach I would rather use '==' since that will eliminate the need for parseInt in this situation.
+</p>
+
+<h3>
+  - Does it matter what order your if-statements are in?
+</h3>
+<p>
+  When I move them around it doesn't seem to affect them in any way. I'd say no it doesn't.
+</p>
+<h3>
+  - When testing ranges, did you use `&&`, `||`, or something else entirely (e.g. nested if-statements)? If you used `&&`, why is that a better choice than `||` (and vice-versa)?
+</h3>
+<p>
+  I personally used the '&&' but that was just a preference thing. I also saw it that way in an example I looked up so I stuck with it. I don't necessarily think it's a better choice as much as it is personal preference.
+</p>
+<h3>
+  - What types of input produce a value of `NaN` after parsing? Is it important to check for `NaN` values? Is it possible for a `NaN` value to trigger any of the other if-statements? If so, how and why?
+</h3>
+<p>
+  Input that produces NaN values tends to be symbols such as '$'. I'd say it's important to parse for thos values to avoid errors coming up on the user side of things.
+</p>
+<h3>
+  - What questions do you have?
+</h3>
+<p>
+  None at the moment! It's a bit odd to me that there's no 'end' statement to the if thens but that's just a personal feeling.
+</p>
+
+<h3>
+  - Does it matter what order your `if` / `else if` statements happen? If you reorder them, does your program still produce correct output?
+</h3>
+<p>
+  It doesn't seem to matter if I reorganize them. I don't see any change in output. 
+</p>
+<h3>
+  - What's wrong with this conditional: `if (age < 16 && age > 21)`?
+</h3>
+<p>
+  You have two combating statements. You can't have your age be less than 16 and greater than 21. You'd have to set a range like 'if (age >16 && age < 21)' to get a correct output.
+</p>
+<h3>
+  - Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your `if` statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?
+</h3>
+<p>
+  I think just going in and swapping the numbers would be easier. It's a personal preference, or at least that's how I see it. If you have variables it seems less easy to maintain because then you have to look at the variables and what they're set to and make sure you're changing the right variables to the correct number. It's an extra bit of mess in my opinion.
+</p>
+
+<h3>
+  - What happens if one (or more) of the lengths aren't input correctly and thus end up as `NaN`?
+</h3>
+<p>
+If one or more lengths come in as NaN it just tells me that it was not a valid triangle. The console shows 'NaN compared to 5' and 'NaN compared to 10' which is the total of two numbers compared to the third number.
+</p>
+ <h3>
+  - What happens if one of the lengths of the triangle is `0`? Two of the lengths? All three lengths?
+</h3>
+<p>
+It will say it's not a valid triangle thanks the the math that's set up in the code.
+</p>
+<h3>
+  - What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?
+</h3>
+<p>
+it will still try to do the math on the numbers involved. It's something that can be fixed by adding some if statement.
+</p>
+
+
+
+
+
+
+
+  </body>
+</html>
