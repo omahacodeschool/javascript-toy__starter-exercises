@@ -141,7 +141,7 @@ if (sideOne === sideThree || sideOne === sideTwo || sideTwo === sideThree) {
 } 
 
 if (invalidFlag = false) {
-  alert(triangleIdentifier.join("\n"))
+  alert(triangleIdentifier.join("\n"));
 }
 
 //---------------------------------------------
