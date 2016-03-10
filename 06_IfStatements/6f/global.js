@@ -3,9 +3,10 @@ var b = parseInt(prompt("please input the second number"));
 var c = parseInt(prompt("please input the third number"));
 
 if ((a + b > c) && (a + c > b) && (c + b > a)) {
-	console.log("great triangle");
-};
-
+	alert("great triangle");
+}
 else {
-	console.log("sad triangle");
-};
+	alert("sad triangle");
+}
+
+

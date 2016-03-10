@@ -31,6 +31,6 @@ if (input < 0) {
 	console.log(negative_num);
 };
 
-if (input == NaN) {
+if (isNaN(input)) {
 	console.log(not_a_num);
 };
