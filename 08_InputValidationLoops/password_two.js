@@ -4,7 +4,7 @@ var userPassword = prompt("Figure out the password.", "password goes here");
 
 while (userPassword != password) {
   alert("Password incorrect. Try again");
+  userPassword = prompt("Figure out the password.", "password goes here");
 } 
-else {
-  alert("Job well done.");
-}
+
+alert("Job well done.");
