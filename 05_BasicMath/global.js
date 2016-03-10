@@ -1,13 +1,13 @@
 // First number prompt
-var firstNum = prompt("Please supply a number, any (whole) number.");
-console.log("First user input: " + firstNum);
+var firstNum = parseInt(prompt("Please supply a number, any (whole) number.");
+console.log("First user input: " + firstNum));
 
 // Second number prompt
-var secondNum = prompt("Now another number, please.");
+var secondNum = parseInt(prompt("Now another number, please."));
 console.log("Second user input: " + secondNum);
 
 // Third number prompt
-var thirdNum = prompt("Any one last number.");
+var thirdNum = parseInt(prompt("Any one last number."));
 console.log("Third user input: " + thirdNum);
 
 // Define arithmetic functions
@@ -18,20 +18,15 @@ function divide(numOne, numTwo) { return numOne / numTwo; }
 function increment(numOne) { return numOne + 1; }
 function decrement(numTwo) { return numTwo - 1; }
 
-// Convert number strings to integers
-firstInt  = parseInt(firstNum)
-secondInt = parseInt(secondNum)
-thirdInt  = parseInt(thirdNum)
-
 // Alert the user to the results
-alert(firstNum + " + " + secondNum + " + " + thirdNum + " = " + add(firstInt, secondInt, thirdInt));
+alert(firstNum + " + " + secondNum + " + " + thirdNum + " = " + add(firstNum, secondNum, thirdNum));
 
-alert(firstNum + " - " + secondNum + " - " + thirdNum + " = " + subtract(firstInt, secondInt, thirdInt));
+alert(firstNum + " - " + secondNum + " - " + thirdNum + " = " + subtract(firstNum, secondNum, thirdNum));
 
-alert(firstNum + " x " + secondNum + " x " + thirdNum + " = " + multiply(firstInt, secondInt, thirdInt));
+alert(firstNum + " x " + secondNum + " x " + thirdNum + " = " + multiply(firstNum, secondNum, thirdNum));
 
-alert(firstNum + " / " + secondNum + " = " + divide(firstInt, secondInt, thirdInt));
+alert(firstNum + " / " + secondNum + " = " + divide(firstNum, secondNum, thirdNum));
 
-alert(firstNum + "++ = " + increment(firstInt));
+alert(firstNum + "++ = " + increment(firstNum));
 
-alert(secondNum + "-- = " + decrement(secondInt));
+alert(secondNum + "-- = " + decrement(secondNum));
