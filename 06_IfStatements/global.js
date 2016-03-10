@@ -113,17 +113,17 @@ var sideOne = parseFloat(prompt("What is the length of the first side of the tri
 sideTwo = parseFloat(prompt("What is the length of the second side of the triangle?")),
 sideThree = parseFloat(prompt("What is the length of the third side of the triangle?")),
 triangleIdentifier = [],
-invalidCount = 0;
+invalidFlag = false;
 
 if (isNaN(sideOne) || isNaN(sideTwo) || isNaN(sideThree)) {
    alert("All parameters must be valid numbers.");
-    invalidCount++
+    invalidFlag = true
 } else if (sideOne === 0 || sideTwo === 0 || sideThree === 0) {
     alert("No side of a triangle can have a length of 0.");
-    invalidCount++
+    invalidFlag = true
 } else if (sideOne < 0 || sideTwo < 0 || sideThree < 0) {
     alert("The length of a traingle cannot be expressed with imaginary numbers.");
-    invalidCount++
+    invalidFlag = true
 } 
 
 if (sideOne === sideThree && sideOne === sideTwo) {
@@ -140,7 +140,7 @@ if (sideOne === sideThree || sideOne === sideTwo || sideTwo === sideThree) {
   triangleIdentifier.push("This is an isosceles triangle.");   
 } 
 
-if (invalidCount <= 0) {
+if (invalidFlag = false) {
   alert(triangleIdentifier.join("\n"))
 }
 
