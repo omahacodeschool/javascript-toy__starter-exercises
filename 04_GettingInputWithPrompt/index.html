@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <!-- Include your external Javascript file here -->
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+
+  <h2>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.</h2>
+  <p>As far as I can tell, anything the user inputs is, at the point of its input, a string. When I ran typeof on the 'age' variable, it said 'string' in the console.</p>
+
+  <h2>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+  <p>The variable is stored but with nothing in it, so it returns a blank wherever the variable is called (but no error message).</p>
+
+  <h2>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+  <p>I named my variables name, age, hometown, and number. I think anyone could predict what they all mean, except number--something like favorite_number would've been more descriptive.</p>
+
+  <h2>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+  <p>Yes, it would make sense to change variable names if the question being asked to the user changed. I don't think it'd be necessary to change the variable name if the order of questions differs.</p>
+
+  <h2>In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</h2>
+  <p>Most websites that collect information do so through HTML forms (or through click tracking, but that's a different kind of information). An advantage to HTML forms is that they can collect more than one piece of information at a time--a form with 10 text fields is the equivalent of 10 prompt pop-ups, which would get annoying for the user fast. Prompt would be acceptable if there's only one piece of information being collected--like a user entering his/her name at the beginning of a game.</p>
+
+  <h2>Research prompt() -- is there any way to make it so that there are two (or more) fields?</h2>
+  <p>Google tells me this: "Short of constructing your own using DOM methods and Input elements: No." I don't know anything about DOM methods or Input elements yet, so I don't know how realistic these options would be.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>Why isn't it easier to make multiple-input forms, anyway? Also, when a user types someting into a prompt, is it being stored like a variable value is stored, or is there some type of hidden mini database that I don't know about?</p>
+
+</body>
+</html>
