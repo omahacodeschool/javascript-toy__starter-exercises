@@ -8,13 +8,35 @@
   <h1>JS Atomic 04</h1>
 
   <ol>
-    <li>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.</li>
+    <li>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number.</li>
+      <ul>
+        <li>The data-type of information that comes in is String.  If a user inputs an Integer when a String was expected, the alert will return a String (just a String of the number entered). If the user inputs a String when an Integer is expected, the alert still returns a String.</li>
+      </ul>
     <li>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</li>
+      <ul>
+        <li>Alert() just displays an empty String, console.log verifies this.</li>
+      </ul>
     <li>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</li>
+      <ul>
+        <li>Variable names were chosen based on the variable data they would be storing.  If I gave a list of variable names to someone who hasn't seen my code they could reasonably predict what information we would want to store in each.</li>
+      </ul>
     <li>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</li>
+      <ul>
+        <li>If I completely changed a question I was asking the user it would make sense to rename the variable for the sake of maintainable code.  It would not make sense to rename the variables if simply changing the order of the questions.</li>
+      </ul>
     <li>In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</li>
+      <ul>
+        <li>Most websites use HTML forms and POST the user input to their database.  An advantage might be that the user's information is not stored on their browser vs. with prompt(), and hence more secure.</li>
+        <li>A disadvantage to using HTML forms and POST might be that with prompt(), we are assured to obtain some form of user input before the user can continue with their experience.  I don't see that as being much of and advantage for prompt() though.</li>
+      </ul>
     <li>Research prompt() -- is there any way to make it so that there are two (or more) fields?</li>
+      <ul>
+        <li>Short of constructing your own using DOM methods and Input elements: No</li>
+      </ul>
     <li>What questions do you have?</li>
+      <ul>
+        <li>Just why we would want to use prompt() for anything important other than a game?</li>
+      </ul>
   </ol>
 
 </body>

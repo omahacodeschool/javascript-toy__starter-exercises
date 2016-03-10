@@ -14,9 +14,13 @@ var favNumber = prompt("What is your favorite number?");
 
 alert("Your name is " + name + ".");
 console.log(name);
+console.log(typeof name);
 alert("Your age is " + age + ".");
 console.log(age);
+console.log(typeof age);
 alert("Your hometown is " + hometown + ".");
 console.log(hometown);
+console.log(typeof hometown);
 alert("Your favorite number is " + favNumber + ".")
 console.log(favNumber);
+console.log(typeof favNumber);
