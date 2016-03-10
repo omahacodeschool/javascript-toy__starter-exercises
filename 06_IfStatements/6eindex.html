@@ -1,15 +1,20 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>JS Atomic 06.D</title>
+  <title>JS Atomic 06.E</title>
   <script src="6eglobal.js"></script>
 </head>
 <body>
-  <h1>JS Atomic 06.D Drivers Ed</h1>
+  <h1>JS Atomic 06.E Drivers Ed 2</h1>
   <h3><i>pre-babies and underagers will get an alert message, all other messages are displayed in the console</i></h3>
 </body>
 </html>
   <h2>Does it matter what order your `if` / `else if` statements happen?</h2>
-  
-- What's wrong with this conditional: `if (age < 16 && age > 21)`?
-- Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your `if` statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?
+  <p> I don't think it does? Not in this example anyway. If, instead of the age ranges specified, it was "if >25" "else if >30" etc, then it would matter, because anything over 30 would also be over 25 and it would be triggered too soon.</p>
+  <h2>What's wrong with this conditional: `if (age < 16 && age > 21)`?</h2>
+  <p>It should be ((age < 16) && (age > 21)). Each of the age specifications needs to be in it's own () in order to be evaluated true or false individually.</p>
+  <h2>Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your `if` statements with variables to make the program make sense?</h2>
+  <p>Yes, totally doable, and I'm going to do that right now!</p>
+  <h2>Does it matter?</h2>
+  <p>Yes, because the code is more maintainable that way (and I want to avoid exclusion of other cultures in my work whenever possible)</p>
+ 
