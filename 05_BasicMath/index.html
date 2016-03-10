@@ -1,0 +1,12 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <h2>What happens when you try to parse the integer out of a string like `"I am 9 years old"`? How about `"9 is my age"`? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+  <p>From my tinkering, it seems that as long as the integer is the FIRST character in a string, parseFloat can find it. So "6!" or "7 okay?" works, but "oh i don't know 5?" does not. It's also worth noting that if you put multiple numbers (like "7 8 9 10") it will only count the FIRST number.</p>
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>Commas and dollar signs confuse the ParseFloat. If there's a comma, like 5,000, it assumes you mean 5. If you put $4, it can't look past the dollar sign. It does still consider $4 a "number" (found that out with typeof) but it assigns it the new value of "null"</p>
