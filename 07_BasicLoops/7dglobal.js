@@ -1,5 +1,7 @@
-var i = 0
-number = 25
+var startnumber = prompt("Where should we start, FizzBuzzer?")
+var i = parseInt(startnumber)
+var endnumber = prompt("And where shall we end?")
+number = parseInt(endnumber)
 var fizz = "fizz"
 var buzz = "buzz"
 
