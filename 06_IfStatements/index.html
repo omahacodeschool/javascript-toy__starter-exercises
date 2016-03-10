@@ -1,0 +1,141 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 02</title>
+  <<script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+    <h2><u>6A: Relational and Equality Operators</u></h2>
+      <h3> Results: </h3>
+        <p><b>console.log( "5 == '5' is " + (5 == '5') ); // true </b><br>
+            -- Example Problem. The '==' operator checks to see if the  values are the same regardless of type <br>
+
+          <b>console.log( "5 == 'five' is " + (5 == 'five') ); // false</b><br>
+             -- I got it right. The '==' operator checks to see if the  values are the same regardless of type. 'five' is a string and has a different value than '5' or 5.<br>
+
+          <b>console.log( "5 == '6' is " + (5 == '6') ); //false</b><br>
+            -- I got it right. Already explained == operator.<br>
+
+          <b>console.log( "5 === '5' is " + (5 === '5') ); //false</b><br>
+            -- I got it right. === checks the value AND the type. '5' is a string and 5 is an Integer. They are different types.<br>
+
+          <b>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) ); // true</b><br>
+            -- I got it right. <br>
+
+          <b>console.log( "5 == 5 is " + (5 == 5) ); //true</b><br>
+            -- I got it right.<br>
+
+          <b>console.log( "5 === 5 is " + (5 === 5) ); //true</b><br>
+            --I got it right<br>
+
+          <b>console.log( "true == 'true' is " + (true == 'true') ); //false</b><br>
+            -- I got it right. true is a boolean value. 'true' is a string. Even with == they have completely different values<br>
+
+          <b>console.log( "true === 'true' is " + (true === 'true') ); //false</b><br>
+            -- I got it right <br>
+
+          <b>console.log( "true == false is " + (true == false) ); //false</b><br>
+            -- I got it right <br>
+
+          <b>console.log( "5 == 12 is " + (5 == 12) ); //false</b><br>
+            -- I got it right <br>
+
+          <b>console.log( "5 != 12 is " + (5 != 12) ); //true</b><br>
+            -- I got it right. The != operator asks if the value between the two arguements is equal. Basic math says it's not.<br>
+
+          <b>console.log( "5 < 12 is " + (5 < 12) ); //true</b><br>
+            -- I got it right. 5 is less than 12. < operator works just like the < does in basic math.<br>
+
+          <b>console.log( "5 <= 12 is " + (5 <= 12) ); //true</b><br>
+            --I got it right. <= is less than OR equal to. 5 is definitely less than 12, so it meets one of the requirements of the operator and is true. Basically, it is the more efficient way of writing 5 < 12 || 5 = 12 <br>
+
+          <b>console.log( "5 > 12 is " + (5 > 12)); //false</b><br>
+            -- I got it right. > operator works just like the > operator in basic math. 5 is not greater than 12.<br>
+
+          <b>console.log( "5 >= 12 is " + (5 >= 12)); //false</b><br>
+            --I got it right. >= is greater than OR equal to. 5 is neither greater than or equal to 12.</p>
+
+      <h3> What do you call `true` and `false` values? </h3>
+        <p> True/False values are called 'Boolean' values.</p>
+
+      <h3>How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h3>
+        <p> "true" is a string containing the word true. true (no string) is a boolean value.<br>
+         Even though it's the same word, they're nothing alike. For example 2 = 1 + 1 == "true" would be false, because 2 does not equal the string 'true', regardless of data type. </p>
+
+  <h2><u>6B: Password Game</u></h2>
+    <h3>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?</h3>
+      <p>The password had to match perfectly in terms of punctuation, because i didn't put any safeguards in place to ensure that it didn't matter.
+      If the programmer doesn't anticipate that, the password is case-sensitive because something like a capital M has a different byte size than a lowercase m. 
+      Therefore, "Meep" and "meep" are different values, regardless of whether the programmer is using == or === </p>
+    
+    <h3>Did you use `=` or `==` or `===` to compare passwords (or something else)? Why? Would any of the others work?</h3>
+      <p> I used ===. However, == would have worked just as well, since we would always be checking a string against a string.</p>
+
+    <h3>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h3>
+          <p>It's a bad idea to store scase sensitive information in javascript files becuase there would be nothing stopping someone from inspecting the page, going to console, and trying to guess what certain variables are called to get a return value
+          For example, if you cmd + shift + j and type 'password' into console, it'll return "meep," which is my stored password for this exercise.
+          and taking all that data. a javascript file should never function as a database. Use sessions or store things in an actual database to keep them safe.</p>
+
+  <h2><u>6C: Guess a Number</u></h2>
+      <h3>If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?</h3>
+        <p> If you're not parsing (like me) == is the only solution, because it will compare the value of the characters and not the type.
+        === would cause a pasword to fail without parsing because a string and integer are different data types, and prompt functions always generate string values.
+        Honestly, I think == is best, because parsing would turn "18butts" into "18" and yield in a success, while "18butts" would result in a failure when just comparing the values between both variables using ==.
+        It's a tiny example, but in this case would be a more secure option with less of an opportunity for the user to "guess" correctly.</p>
+
+      <h3>If you collect the user's input as an integer (i.e. by using `parseInt()` to turn it into an integer), can you use `==` to compare? `===`? Which is better in this case?</h3>
+        <p> I think I covered this pretty well in the aformentioned explination. Let me know if you'd like further clarification though.</p>
+
+      <h3>What is the difference between `==` and `===`? </h3>
+        <p> I think I covered this pretty well in the aformentioned explination. Let me know if you'd like further clarification though.</p>
+
+      <h3>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h3>
+        <p> I think I covered this pretty well in the aformentioned explination. Let me know if you'd like further clarification though.</p>
+
+  <h2><u> 6D: Driver's Ed, Part 1 </u></h2>
+      <h3>Does it matter what order your if-statements are in?</h3>
+      <p> Not really unless I want things to display in a certain way when it comes to the messages. (I cheated and looked over pt2 and saw you wanted us to incorporate the else if statements there). </p>
+
+      <h3>When testing ranges, did you use `&&`, `||`, or something else entirely (e.g. nested if-statements)? If you used `&&`, why is that a better choice than `||` (and vice-versa)?</h3>
+        <p> I tried to avoid nested if/else statements after the refactoring discussions. I used && for the range because I wanted BOTH conditions to be true in the case of 0 - 15: the person needed to be 0 or older, AND 15 or younger to qualify. 
+        Otherwise, pretty much everyone aside from people who hadn't been born yet and people with NaN value ages could get the message. </p>
+      
+      <h3>What types of input produce a value of `NaN` after parsing? Is it important to check for `NaN` values? Is it possible for a `NaN` value to trigger any of the other if-statements? If so, how and why?</h3>
+        <p> Anything that couldn't be parsed into an integer triggers the NaN statement. So stuff like "I am 19" or "lolbutts" will trigger it, while "18 years old" won't. 
+        The NaN statement will look through the other if statements but will never be applicable, as they are all specify numerical-based ranges.</p>
+
+      <h3>What questions do you have?
+      <p> None so far, but the inNaN() function took me waaaay longer to figure out than I care to talk about. 
+
+
+  <h2><u>6E: Driver's Ed, Part 2 </u></h2>
+      <h3>Does it matter what order your `if` / `else if` statements happen? If you reorder them, does your program still produce correct output?</h3>
+      <p> In this case, it does matter, because once the value meets one condition, it does not iterate through the rest of the statements. Therefore, it is probably smartest to sort from the highest possible age to the lowest possible age. Therefore, a 27 year old will always get the message
+      about renting a car, rather than getting the 16+ older memo about being able to get a drivers license. </p>
+
+      <h3>What's wrong with this conditional: `if (age < 16 && age > 21)`?</h3>
+        <p> That conditional is saying "if the user is UNDER the age of 16 AND the user is OVER the age of 21" DO THIS THING. This thing will never happen, because the computer can't take into consideration
+        the fact that some people are young at heart into consideration unless we tell it to. (Jokes aside, this is an imposssible state and will never happen) If you're trying to check for EITHER situation, the || conditional is the one to use.</p>
+
+      <h3>Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your `if` statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?</h3>
+        <p> Honestly, if you're wanting several different sets of variables that could appear there, you're proabbly going to have to have a variable sitting there that calls a method on a database and returns a stored column value from a instance. Otherwise, just having a variable there really isn't that much different from 
+          manually changing the ages in the if/else statement by hand for different situations, anyway. </p>
+
+
+  <h2><u>6F: Triangles</u></h2>
+      <h3>What happens if one (or more) of the lengths aren't input correctly and thus end up as `NaN`?</h3>
+        <p>If one or more of the parameters is not provided by the user, the triangle will always be invalid. </p>
+
+      <h3> What happens if one of the lengths of the triangle is `0`? Two of the lengths? All three lengths?</h3>
+         <p> If only one length of the triangle is set as 0, the program will identify the triangle as valid.<br>
+         If two of the three variables have values set to 0, the program will consider the triangle valid.<br>
+         If all three sides of the triangle have each have a recorded length of 0, the program will consider it an invalid triangle.</p>
+
+      <h3>What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?</h3>
+          <p>If one variable is set to a negative integer/float, the program will consider the triangle valid. </p>
+
+
+
+</body>
+</html>

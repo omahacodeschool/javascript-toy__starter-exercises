@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <script type="text/javascript" src="global.js"></script>
+<body>
+  <h1>JS Atomic 04</h1>
+
+    <h3> 1. What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use `typeof` and `console.log()` to help with this.</h3>
+      <p>Based on what I was able to observe in console, the user `prompt()` works like Ruby's `gets.chomp`, 
+      meaning that the default value for a method like `prompt()` is always going to be a string--even if you're using integers.
+      I know you can change the value with a form, but I'm not sure if it's possible with a limited method like `prompt()` 
+      (at least there was nothing I could find on the internet about alerting `prompt()`, specifically).</p>
+
+    <h3> 2. What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h3>
+      <p>If the user clicks "OK" without typing a response, it appears that the value is saved as an empty string. That information still is assigned to the corresponding variable.
+      This is different from the situation where you don't actually define a variable at all.
+      You could do something like prompt("EXAMPLE QUESTION", "N/A") for a default string value of "N/A" if you didn't want to store an empty string
+      but wanted a quick identifier to query by, in the event that people don't have to fill out certain forms.</p>
+
+    <h3> 3. How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h3>
+      <p>Generally I try to use the core word or limited set of words that defines the data I'm trying to store in the variable. 
+      Personally, I think variables and methods that tell a story are almost as helpful as clear documentation (if not more, in some cases).</p>
+
+    <h3> 4. If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h3>
+      <p>Given that the prompt value is stored in the variable, I think it would be increidbly important. If you change the question for "what is your name?" to "What is your biggest fear?",
+      You're effectively storing a person's biggest fear in the variable reserved for his or her name.
+      Even if it's just you working on the website, that's going to make things pretty confusing down the line when you're trying to retrieve data or even call that variable elsewhere on the site. </p>
+
+    <h3> 5. In these exercises, we use `prompt()` to collect information, but most websites do that ask for information do not use `prompt()` -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with `prompt()`? Are there any disadvantages? Why might you use `prompt()`?</h3>
+      <p>From what I can tell, most sites use html forms like we have been using throughtout the course.
+      I mean the prompt method is just really awful. Unnecessary popups are just awful. </p>
+
+      <p>The only disavantages to using forms over prompts (that I could think of) would be the fact that you can't set a form directly to a variable value like you can with prompt/gets.
+      So it's a little extra coding and setup on the html side. But honestly, gratuitous popups are just the worst. 
+      Do a little extra work--it greatly improves the user experience. Plus, you can do a lot more stylistic, cool stuff with them. And everything doesn't have to have the default value set to a string. </p>
+
+    <h3> 6. Research `prompt()` -- is there any way to make it so that there are two (or more) fields?</h3>
+      <p>From what I could tell, you couldn't do that with the `prompt()` javascript method. However, you could achieve the same intended effect using the JQuery Dialogue function to do that
+      However, you're still basically calling on forms in html and then wrapping multiple forms in a popup. You're pretty much doing the same amount of work, for a terrible user experience (can you tell that I don't really care for popups?)</p>
+
+    <h3> 7. What questions do you have?</h3>
+      <p>None that immediately come to mind. I like these exercises!</p>
+
+</body>
+</html>
