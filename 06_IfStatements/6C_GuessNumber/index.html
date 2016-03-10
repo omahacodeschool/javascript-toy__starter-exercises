@@ -1,0 +1,43 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06C</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06C</h1>
+
+  <h2>
+    If you collect the user's input as a string (i.e. without using <code>parseInt()</code> to turn it into an integer), does <code>==</code> work to compare the input to the stored secret number? Would <code>===</code> work? Which is best?
+  </h2>
+
+  <p>
+    If we collect the user's input as a string, <code>==</code> does work when comparing the input to the stored secret number. However, in this case, <code>===</code> does not work. So in this instance <code>==</code> would be best since it is the only option that works, however, much like with the password example, I believe first converting the input to an integer and then comparing with <code>===</code> would be more preferential. 
+  </p>
+
+  <h2>
+    If you collect the user's input as an integer (i.e. by using <code>parseInt()</code> to turn it into an integer), can you use <code>==</code> to compare? <code>===</code>? Which is better in this case?
+  </h2>
+
+  <p>
+    If we collect the user's input as an integer, both <code>==</code> and <code>===</code> can be used successfully to compare. In this case, I don't think there is a clear choice as to which is best since the <code>parseInt()</code> serves as a catch all by attempting to convert all user input into an integer first. Thus, the only options would be an integer or an undefined variable. 
+  </p>
+
+  <h2>
+    What is the difference between <code>==</code> and <code>===</code>?
+  </h2>
+
+  <p>
+    The difference between <code>==</code> and <code>===</code> is that <code>===</code> compares both the value and type of the two entities being compared, whereas <code>==</code> will attempt to convert the second entity being compared, so they can be different data types as long as their value evaluates to be equal. 
+  </p>
+
+  <h2>
+    In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?
+  </h2>
+
+  <p>
+    I think it makes more sense to conver the user's guess to an integer since the secret number is also stored as an integer. This way you are comparing "apples to apples" and there is less room for variation. Both approaches have their own advantages and disadvantages when it comes to adding new features to the program. In the instance where you are converting initially to an integer, mathematical functions would be able to be done directly to both the input and the user's input. This then becomes a disadvantage, however, advantageous to the other approach, if the additional features will attempt to use string functions on either variable. 
+  </p>
+  <!-- Answer the questions above here -->
+</body>
+</html>

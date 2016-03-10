@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 6F</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 6F</h1>
+  <h2>
+    What happens if one (or more) of the lengths aren't input correctly and thus end up as <code>NaN</code>?
+  </h2>
+
+  <p>
+    <strong>Expected:</strong> I believe that the <code>NaN</code> value will void any mathematical functions trying to be done on it and cause all of the conditiontals to evaluate as <code>false</code>.
+  </p>
+
+  <p>
+    <strong>Observed:</strong> My initial prediction was correct. 
+  </p>
+
+  <h2>
+    What happens if one of the lengths of the triangle is 0? Two of the lengths? All three lengths?
+  </h2>
+
+  <p>
+    <strong>Expected:</strong> I'm assuming that if one of the numbers equals 0 the conditional statments will still evaluate as <code>true</code> and it will consider the triangle valid. I believe this will also occur if all three lengths are zero, however, in the event that only 2 lengths are zero I postulate that it will return that the triangle is invalid. 
+  </p>
+
+  <p>
+    <strong>Observed:</strong> I was incorrect. Each of the zero situations produced an invalid triangle since there was always at least one conditional that failed.
+  </p>
+
+  <h2>
+    What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?
+  </h2>
+
+  <p>
+    <strong>Expected:</strong>I believe that the math will successfully evaluate, however, I don't think there will be any time when the triangle will be deemed valid since there will always be at least one <code>false</code> statment.
+  </p>
+
+  <p>
+    <strong>Observed:</strong>My assumption was correct. 
+  </p>
+
+  <h2>
+    Assuming errors exist, note that all of these errors come from the user inputting one or more invalid values. What are some strategies you might use to prevent this from happening (or at least to prevent those invalid values from being used)?
+  </h2>
+
+  <p>
+    It would be at this point I would try to implement some type of input validation. In most cases this can be handled with a simple <code>if</code> statement the excludes values you don't want to test. You would encapsulate each <code>prompt()</code> in a similar conditional thus only running that line of code once the condition is met. 
+  </p>
+  <!-- Answer the questions above here -->
+</body>
+</html>
+

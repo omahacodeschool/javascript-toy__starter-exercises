@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <h2>
+    What happens when you try to parse the integer out of a string like "I am 9 years old"? How about "9 is my age"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?
+  </h2>
+
+  <p>
+    When parsing "I am 9 years old" the variable is not stored correctly. However, when parsing "9 is my age" the number "9" is stored in the variable. It seems <code>parseInt()</code> will correctly store a variable when an integer is at the beginning of an input and only the integer at the beginning.
+  </p>
+
+  <h2>
+    What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?
+  </h2>
+
+  <p>
+    Much like trying to parse an input that begins with a string, the variable is not stored. With the way I implemented <code>parseInt()</code> I did not get any errors or console output. This may have been different had I stored the variable first and then attempted to <code>parseInt()</code>.
+  </p>
+
+  <h2>
+    What questions do you have?
+  </h2>
+
+  <p>
+    Is there any way to increment a variable and output it in the same alert?
+  </p>
+
+  <!-- Answer the questions above here -->
+</body>
+</html>

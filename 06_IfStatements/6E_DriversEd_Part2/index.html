@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06E</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06E</h1>
+  <h2>
+    Does it matter what order your <code>if</code> / <code>else if</code> statements happen? If you reorder them, does your program still produce correct output?
+  </h2>
+
+  <p>
+    The order of your <code>if</code> and <code>else if</code> statements does matter. If you reorder them the program will output the message of the first conditional that evaluates to <code>true</code>. So when I tested this I reversed the order of my conditional statments and any age 21+ produced the message for 21. Now if I would have used ranges for all of my conditionals instead of an all inclusive <code>>=</code> then the order would not matter.
+  </p>
+
+  <h2>
+    What's wrong with this conditional: <code>if (age < 16 && age > 21)</code>?
+  </h2>
+
+  <p>
+    In this example a number will never be less than 16 AND greater than 21 so it will never evaluate as <code>true</code>.
+  </p>
+
+  <h2>
+    Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your if statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?
+  </h2>
+
+  <p>
+    By using variables you could easily modify the conditional statements to work with any numbers. For this example I would use "drinkingAge" for the "21" and something like "licenseAge" in place of the "16". Once each of the lower and upper bounds are determined the only other thing that would be need to be changed would be determining where <code>>=</code> or just <code>></code> would produce the correct output. 
+  </p>
+  
+  <!-- Answer the questions above here -->
+</body>
+</html>
