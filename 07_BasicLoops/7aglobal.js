@@ -1,5 +1,7 @@
-var i = 0
-var number = prompt("Pick a number and I'll count!")
+var startnumber = prompt("Counting! Where should I start?")
+var i = parseInt(startnumber)
+var endnumber = prompt("Where should I end?")
+var number = parseInt(endnumber)
 while (i <= number) {
     console.log(i);
     i++;
