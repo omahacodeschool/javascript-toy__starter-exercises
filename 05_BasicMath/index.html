@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+
+  <h2>What happens when you try to parse the Integer out of a String like "I am 9 years old"? How about "9 is my age"? Other combinations of numbers and letters? What needs to be true about the incoming String for it to be parsed correctly?</h2>
+  <p>From a little tinkering around, it would appear that in order to successfully parse the integer from a String, the integer needs to be the first character of the String. If it's found in the middle or at the end of a String, 'NaN' is returned.</p>
+
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>When input non-numeric text to the prompts, the result of the equation is returned as 'NaN'. In the console, I received an 'Uncaught ReferenceError'.</p>
+  <p>I did find that when inputting a comma, with the way my functions are defined, the integers appearing after the comma were read as the next input.</p>
+  <p>With the conversion of the number Strings to Integers, when inputting floats, the number is rounded down.</p>
+  <p>When entering an number with a comma in the debug section of the console, any numbers appearing after the comma are returned.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>No questions again as of yet</p>
+
+</body>
+</html>
