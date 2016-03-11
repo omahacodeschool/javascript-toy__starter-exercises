@@ -50,6 +50,14 @@
   <h5>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h5>
   <p>Because this information is available to any user via the developer tools, Sources tab in the DOM.</p>
 
+  <h3>6C: Guess a Number</h3>
+  <h4>Questions</h4>
+  <h5>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h5>
+  <p>Both work, I think === would be best since it requires the both to be equal and integers.</p>
+  <h5>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h5>
+  <h5>What is the difference between == and ===?</h5>
+  <h5>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h5>
+
    
 
 </body>
