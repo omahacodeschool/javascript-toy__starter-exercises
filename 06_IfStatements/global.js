@@ -8,8 +8,8 @@ else {
 };
 
 var secretNumber = 23;
-var userNumber = prompt("enter a number");
-if (parseInt(userNumber) === secretNumber) {
+var userNumber = parseInt(prompt("enter a number"));
+if (userNumber === secretNumber) {
   alert("correct! " + userNumber + " is " + secretNumber)
 }
 else {

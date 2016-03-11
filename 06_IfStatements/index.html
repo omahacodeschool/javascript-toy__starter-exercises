@@ -53,10 +53,13 @@
   <h3>6C: Guess a Number</h3>
   <h4>Questions</h4>
   <h5>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h5>
-  <p>Both work, I think === would be best since it requires the both to be equal and integers.</p>
+  <p>Both work, I think === would be best since it requires both numbers to be equal and integers.</p>
   <h5>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h5>
+  <p>Likewise, we can use both.  === would be best since it requires both numbers to be equal and integers. </p>
   <h5>What is the difference between == and ===?</h5>
+  <p>'==' means 'equal to', while '===' means 'equal value and equal type'.</p>
   <h5>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h5>
+  <p>To me it makes more sense to convert the user's guess to an integer since we are asking for an integer.  But, when we convert the user's guess to an integer we leave the door open to have an incorrect guess count as correct.  For example, if I enter '23 and me' for my number, the reply is still 'correct' since javascript converts the numbers to an integer as long as the string starts with a number, and apparently disregards the text.</p>
 
    
 
