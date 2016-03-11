@@ -6,8 +6,15 @@
 
   var i = parseInt(prompt("Please enter a start-value."));
   var y = parseInt(prompt("Please enter an end-value."));
+  var z = parseInt(prompt("Please enter an increment."));
 
-  if ((i != NaN) && (y != NaN)){
+  var ipos = Math.abs(i);
+  var ypos = Math.abs(y);
+  var zpos = Math.abs(z);
+  var subtract = (ipos - ypos);
+  var difference = Math.abs(subtract);
+
+  if ((i != NaN) && (y != NaN) && (z != NaN) && (zpos <= difference)){
   
   if (i < y) {
 
@@ -15,7 +22,7 @@
 
 
       alert("The number is " + i);
-      i++;
+      (i+=Math.abs(z));
     }
   }
 
@@ -24,7 +31,7 @@
     while (i >= y){
     
     alert("The number is " + i)
-    i--;
+    (i-=Math.abs(z));
     }
   }
 
@@ -37,4 +44,3 @@
     alert("Invalid number entry.")
     };
   }
-
