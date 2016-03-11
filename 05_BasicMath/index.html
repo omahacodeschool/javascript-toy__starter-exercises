@@ -1,0 +1,20 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <h3><i>Check console for mathematical operations (View --> Developer --> JavaScript Console)</i></h3>
+  <h2>What happens when you try to parse the integer out of a string like "I am 9 years old"? How about "9 is my age"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h2>
+  <p>JS says NaN (not a number) for the string "I am 9 years old," but for "9 is my age", it returns 9. If the number is at the end of the string, as in "My age is 9" JS also returns NaN. The number has to be the first thing in the string to be parsed correctly.</p>
+
+  <h2>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h2>
+  <p>For anything beginning with a dollar sign input, the console gives me NaN, and for something like 5,000 (with a comma), JS just uses 5 and leaves out everything after the comma. </p>
+
+  <h2>What questions do you have?</h2>
+  <p>None. I struggled a little with making the incrementing/decrementing show properly in the console, but I looked at the solutions file and understand it now.</p>
+
+</body>
+</html>

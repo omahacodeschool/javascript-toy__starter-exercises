@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 03</h1>
+  <h2>Why don't you need to use the var keyword every time you use a variable (right now, we only use it when we create the variable)? What does var do?</h2>
+  <p>With var, you're declaring a variable (and if it's inside a function it's local, otherwise it's global). I believe you don't have to use var again because when you use the variable name, JS searches back to that original assignment of var to see what it's equal to.</p>
+
+  <h2>What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h2>
+  <p>When I tried it, the program did not work. It wouldn't show any of my console.log statements and I saw this error: Uncaught SyntaxError: Unexpected token var </p>
+
+  <h2>What questions do you have?</h2>
+  <p>I'm still a little confused about global vs. local variables in JS, but maybe I'll get that worked out soon.</p>
+
+</body>
+</html>

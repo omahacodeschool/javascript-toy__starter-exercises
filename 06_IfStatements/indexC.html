@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06-C</title>
+  <script type="text/javascript" src="globalC.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06-C</h1>
+
+  <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+  <p>Okay nevermind... I guess I <i>will</i> be using == sometimes. In this case, it helps since the user input is always going to come across as a string and it can match your number if you use ==. Using === makes it fail, even if the right number (i.e., string) is given.</p>
+
+  <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h2>
+  <p>If you collect input as an integer, both == and === will work. I can't really see an advantage to using one or the other, other than just being... consistent? That is, if you know you're expecting an integer, and you're converting input to an integer, why not use === for strict equality. </p>
+
+  <h2>What is the difference between == and ===?</h2>
+  <p>=== checks for "strict equality." Neither value being compared is converted to some other data type first. I've seen == called "loose equality" and it checks for equality after converting both items to a common type.</p>
+
+  <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+  <p>I feel like it's most the most "clean" to expect an integer and then convert input to an integer. After all, we're talking about a number, so let's treat it like a number, right? You can treat it like a string, sure, and just take the user input as a string, but you have to ask yourself what is this number for? Is it going to be used elsewhere as an actual <i>number</i>? (Like in a mathematical operation?)</p>
+
+</body>
+</html>
