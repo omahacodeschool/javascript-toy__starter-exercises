@@ -12,15 +12,15 @@ countNum = parseInt(countNum);
 // Counting
 if (startNum < endNum){
 
-  while((startNum + countNum) < endNum){
-    startNum += countNum;
+  for(var i = 0; i < Math.floor(endNum / countNum); i++){
     console.log("The count is " + startNum);
+    startNum += countNum; 
   };
 };
 if (endNum < startNum){
-  while((startNum - countNum) > endNum){
-    startNum -= countNum
+  for(var i = 0; i < Math.floor(startNum / countNum); i++){
     console.log("The count is " + startNum);
+    startNum -= countNum
   };
 };
 
