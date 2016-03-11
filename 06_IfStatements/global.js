@@ -1,37 +1,16 @@
-var password = "loggins";
-var userPassword = prompt("enter a password");
-if (userPassword === password) {
-  alert("correct")
-}
-else { 
-  alert ("wrong, the password is 'loggins'")
-};
+var sideA = parseInt(prompt("Side A length:"));
+console.log(sideA);
+var sideB = parseInt(prompt("Side B length:"));
+console.log(sideB);
+var sideC = parseInt(prompt("Side C length:"));
+console.log(sideC);
 
-var secretNumber = 23;
-var userNumber = parseInt(prompt("enter a number"));
-if (userNumber === secretNumber) {
-  alert("correct! " + userNumber + " is " + secretNumber)
+if (((sideA + sideB) > sideC) && ((sideB + sideC) > sideA) && ((sideA + sideC) > sideB)) {
+  console.log((sideA + sideB) > sideC);
+  console.log((sideB + sideC) > sideA);
+  console.log((sideA + sideC) > sideB);
+  alert("That is a real triangle!")
 }
 else {
-  alert ("wrong! " + userNumber + " is not " + secretNumber)
+  alert("That is not a real triangle!")
 };
-
-var userAge = parseInt(prompt("enter your age"));
-if (userAge >= 25) {
-  alert("You can rent a car.")
-}
-else if (userAge >= 21 && userAge < 25) {
-  alert("Please don't drink and drive.")
-}
-else if (userAge >= 16 && userAge < 21) {
-  alert("You're eligible for a driver's license.")
-}
-else if (userAge < 16 && userAge > 0) {
-  alert("You can't drive yet, but you'll be able to in a few years")
-}
-else if (userAge < 0) {
-  alert("You haven't been born yet.")
-}
-else {
-  alert("Sorry, " + userAge + " is not an age.")
-}
