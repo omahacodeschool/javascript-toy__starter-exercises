@@ -8,7 +8,7 @@ endNum = parseInt(endNum);
 var countNum = prompt("How would you like to count by?");
 countNum = parseInt(countNum);
 
-var currentNum = startNum
+var currentNum = startNum;
 
 
 
