@@ -13,8 +13,12 @@
 
   // Output the difference when the second and third numbers are subtracted from the first.
   // Example: 7 - 4 - 12 = -9
-  alert(firstNum + " - " + secondNum + " - " + thirdNum + " = " + (firstNum - secondNum - thirdNum))
+  alert(firstNum + " - " + secondNum + " - " + thirdNum + " = " + (firstNum - secondNum - thirdNum));
 
   // Output the product of the three numbers.
   // Example: 7 * 4 * 12 = 336
-  alert(firstNum + " * " + secondNum + " * " + thirdNum + " = " + (firstNum * secondNum * thirdNum))
+  alert(firstNum + " * " + secondNum + " * " + thirdNum + " = " + (firstNum * secondNum * thirdNum));
+
+  // Output the quotient of the first number divided by the second number.
+  // Example: 7 / 4 = 1.75
+  alert(firstNum + " / " + secondNum + " = " + (firstNum / secondNum));
