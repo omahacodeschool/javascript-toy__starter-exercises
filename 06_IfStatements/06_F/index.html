@@ -1,0 +1,31 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06F Triangles</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06F Triangles</h1>
+  
+<h2>6F: Triangles</h2>
+
+<h2>For all triangles, the sum of the lengths of any two sides must be greater than the length of the third side. For example: a triangle of 3, 4, 5 (in whatever units you want) is valid (since `3 + 4 > 5`, `3 + 5 > 4`, and `4 + 5 > 3`), whereas a triangle of 3, 4, 7 is not (since `3 + 4` is not greater than `7`).</h2>
+
+<h2>Write a program which prompts your user for the lengths of the 3 legs of a triangle (this input can be an integer or a floating point number, but it can't be a string), and which then reports whether this is a valid triangle. It's probably worthwhile to output the results of your behind-the-scenes calculations to the console, but the ultimate output ("This is a valid triangle" or "This is not a valid triangle" should be handled with an alert).</h2>
+
+
+
+<h2>What happens if one (or more) of the lengths aren't input correctly and thus end up as `NaN`?</h2>
+<p>The response is that it is not a valid triangle.</p>
+
+<h2>What happens if one of the lengths of the triangle is `0`? Two of the lengths? All three lengths?</h2>
+<p>All would come back invalid, because two numbers can't both be greater than one another.</p>
+
+<h2>What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?</h2>
+<p>Stuff gets tricky because my greater than comparison won't work as expected. Best to not allow negative numbers and/or get an absolute value and assume negative number entries are unintentional.</p>
+
+
+
+</body>
+</html>
