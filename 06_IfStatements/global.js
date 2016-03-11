@@ -16,21 +16,20 @@ else {
   alert ("wrong! " + userNumber + " is not " + secretNumber)
 };
 
-var userAge = prompt("enter your age");
-
-if (parseInt(userAge) >= 25) {
+var userAge = parseInt(prompt("enter your age"));
+if (userAge >= 25) {
   alert("You can rent a car.")
 }
-if (parseInt(userAge) >= 21) {
+if (userAge >= 21) {
   alert("Please don't drink and drive.")
 }
-if (parseInt(userAge) >= 16) {
+if (userAge >= 16) {
   alert("You're eligible for a driver's license.")
 }
-if (parseInt(userAge) < 16) {
+if (userAge < 16) {
   alert("You can't drive yet, but you'll be able to in a few years")
 }
-if (parseInt(userAge) < 0) {
+if (userAge < 0) {
   alert("You haven't been born yet.")
 }
 if (userAge == NaN) {
