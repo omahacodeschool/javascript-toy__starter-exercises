@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 03</h1>
+  <h2>Why don't you need to use var when you call a variable? Why only use var when creating a variable? What does var do?</h2>
+  <p>Var declares a local variable. When we do var name = "Karl" we create a local variable called "name" and we are also giving that name a value "Karl". Without using var, the variable name would have been made as a global variable.</p>
+
+  <h2>What happens if you try to call a variable before it's been assigned?</h2>
+  <p>If you try to output a variable that has not been created yet, there will be an error in the console log that looks like this: Uncaught ReferenceError: height is not defined(anonymous function) @ global.js:8.  One thing to note is that if you've defined a variable once, ran the code, then deleted where you defined that variable. It looks like that variable still exists and will still be outputed.</p>
+
+  <h2>My questions</h2>
+  <p>My only question is why do my variables still output even after I delete the line that apparently defines them? In Ruby, wouldn't that variable not exist anymore and wouldn't that give an "undefined variable" message? </p>
+  <!-- Answer the 3 questions above here -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>JS Atomic 06c</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06c - Guess a number</h1>
+  <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+  <p>If you don't parse and you use the == operator then yes, javascript does coerce the string into an integer and the secret number still works. Thats not the case with ===. Not sure exactly which is better, I guess whoever makes the site just needs to be aware of the difference.</p>
+  <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h2>
+  <p>Same as above, if you parse the user input into an integer than either == or === will always work as long as you are careful to store you "secret number" as an integer too.</p>
+  <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+  <p>Maybe its better to leave it as a string because in the event that you required a password to include numbers and letters then parse would return Nan. In this case you would always want to compare using === because you want to strictly compare charectors</p>
+    
+</body>
+</html>
