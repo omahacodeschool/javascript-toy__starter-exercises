@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06A</title>
+  <script type="text/javascript" src="global-a.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06A</h1>
+<h2>6A: Console Results</h2>
+
+<p>5 == '5' is true // I guessed true</p>
+<p>5 == 'five' is false // I guessed false </p>
+<p>5 == '6' is false // I guessed false </p>
+<p>5 === '5' is false // I guessed false</p>
+<p>5 == 2 + 3 is true I guessed true</p>
+<p>5 == 5 is true // I guessed true</p>
+<p>5 === 5 is true // I guessed true</p>
+<p>true == 'true' is false // I guessed true</p>
+<p>true === 'true' is false // I guessed false</p>
+<p>true == false is false // I guessed false</p>
+<p>5 == 12 is false I guessed false</p>
+<p>5 != 12 is true // I guessed true</p>
+<p>5 < 12 is true // I guessed true</p>
+<p>5 <= 12 is true // I guessed true</p>
+<p>5 > 12 is false // I guessed false</p>
+<p>5 >= 12 is false // I guess false</p>
+
+
+<p>
+  The only statement that I guessed incorrectly was "true == 'true' is " + (true == 'true')". I guessed that this would be true, but it is in fact, false. The reason I got it wrong, is because I took a guess on that one. I had a funny feeling (which I shouldn't have trusted) that JavaScript would somehow consider 'true' to be truthy, or loosely true... or something. 
+</p>
+
+<h2>What do you call `true` and `false` values?</h2>
+<p>Booleans</p>
+<h2> How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h2>
+<p>"True (without quotes) and "true" are two completely different things in the world of JavaScript. Using the word "true" inside of quotes makes it merely a string (which would technically have a value of false, according to my google searches. Something to do with the fact that it cannot be converted to a number). Using 'true' without quotes is the correct way use true, if a boolean is what you want.</p>
+</body>
+</html>

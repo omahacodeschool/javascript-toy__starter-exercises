@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+  <h2>
+    What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.
+  </h2>
+  <p> The data-type of the information that users provide in the prompt is <em>string</em>. If a user provides a number, it is converted into a string.</p>
+
+  <h2>
+    What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?
+  </h2>
+  <p> If a user clicks "OK" wihtout typing anything in to the text field, the program will still run, but the values stored in the respective variable will just be an empty string. I admit that I am asuming this based on the fact that when I click "ok" without providing input, the console log shows no values, but shows the "typeof" as being a string. </p>
+
+  <h2>
+    How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information yo u might store in each?
+  </h2>
+  <p> 
+    I try to make my variable names as communicable as possible, without being too verbose. In this case, I used just looked for the best word to sum up the information I was expecting being provided from the user. For instance, I used favoriteNumber because number alone would be too vague. I do believe that someone looking at my code would know what information is being stored in each variable.
+    </p>
+  <h2>
+    If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?
+  </h2>
+  <p> Yes. If I were asking the user a different question <em>altogther</em>, I would likely need to change the variable name. If the order of questions is being changed, the variable names should not need to be changed at all. To me, that is the advantage of using descriptive variables. Even if the order changes, we still know which variable store what type of data. </p>  
+
+  <h2>
+    In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?
+  </h2>
+  <p> 
+    It seems to me that using prompts to collect information sets up the user for a poor user expereince. If a user mistypes their response, or wants to change their answer, there is no easy way to do this with prompts. What if the user isn't ready to provide a response? The prompts give a user the one chance to respond to a specific prompt, and then once they miss it, that chance is gone - that is, until the refresh the screen and have to do it all over again. HTML forms are more like forms we use in real life. We can see the info in front of us. We can go back and look at an answer if we need to. We can answer in a diffeerent order. Also, using an html form allows us to manipulate the visual presentation of the forms and text pertaining to the forms. 
+  </p>   
+  <p>
+    Honestly, I cannot think of a reason why someone would <em>need</em> to use a prompt in this day and age. I could be wrong, but I thought long and hard about this, and I really cannot think of an advantage. Perhaps if a website needed only a quick response from a user. That said, I cannot think scenarios where this is the case. I'm assumimg I'm wrong here, because prompts still exist. All of the examples I keep coming up with (in my head), are scenarios in which I can think of no reason to use the prompt instead of an html form.
+  </p>
+
+  <h2>
+    Research prompt() -- is there any way to make it so that there are two (or more) fields?
+  </h2>
+  <p> 
+    From what I read, there is nothing in javascript that is readily available to allow such a feature. There are some JQuery tricks and other hacks, but they would involve writing somewhat complex code and would not really be a true prompt box. So, can it be done? Yes. But it would no longer be a case of using the prompt() method. The answers I've seen seem to all agreee that JavaScript's prompts can only accept one string.
+  </p> 
+
+  <h2>What questions do you have?</h2>
+  <p>
+    At this point, I really am curious about the answer to the question about the advantage of using a JavaScript prompt. Is there ever a time when using them is adventageous?
+  </p>
+  <!-- Answer the questions above here -->
+</body>
+</html>

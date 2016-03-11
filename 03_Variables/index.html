@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 03</h1>
+  <h2> 
+    Why don't you need to use the var keyword every time you use a variable (right now, we only use it when we create the variable)? What does var do?
+  </h2>
+  <p> The reason we do not need to use the <em>var</em> keyword each time we use a variable is because the <em>var</em> keyword is used only to indicate to the javascript interpretor (or whatever it's called) that we're about to declare a variable for the first time. After the variable has been declared, we can then use that variable's name <strong>without</strong> the 
+  <em>var</em> keyword from that point forward (even when redefining the variable).
+  </p>
+
+  <h2>What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h2>
+  <p>If I simply declare the variables without then defining them, the probram still works, but not quite as intended. What happens is that my alert() statements will instead just say "undefined" rather than providing the value of the variable. Now, if I do not even declare the variables at all, then I receive errors (visible only in the console) like "cannot find variable: age" and so forth. In this scenario, only the first alert box shows up (for some reason it does still shows up) but the other do not.</p>  
+
+
+  <h2>What questions do you have?</h2>
+  <p>I guess I'd like to first find out why the first alert box still shows up, even if I don't declare the variables at all, while the subsequent alerts do not show up. If I had to guess, I would assume that the browswer is trying its hardest to run the program, but then terminates after the first alert box, since it cannot find a variable. It does make sense to me that the undefined (but still declared) variables still allow for the program to run, in this example.</p>    
+
+</body>
+</html>
