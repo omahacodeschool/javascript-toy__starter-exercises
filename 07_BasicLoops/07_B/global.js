@@ -4,11 +4,37 @@
 
 //Extend this by asking the user what increment they want to count by.
 
-  var i = prompt("Please enter a start-value.");
-  var y = prompt("Please enter an end-value.");
+  var i = parseInt(prompt("Please enter a start-value."));
+  var y = parseInt(prompt("Please enter an end-value."));
 
-while (i <= 10) {
+  if ((i != NaN) && (y != NaN)){
+  
+  if (i < y) {
 
-  alert("The number is " + i);
-    i++;
-}
+    while (i <= y) {
+
+
+      alert("The number is " + i);
+      i++;
+    }
+  }
+
+  else if (i > y) {
+
+    while (i >= y){
+    
+    alert("The number is " + i)
+    i--;
+    }
+  }
+
+  else if (i === y) {
+    alert("Those numbers are the same!")
+  }
+
+  else {
+
+    alert("Invalid number entry.")
+    };
+  }
+
