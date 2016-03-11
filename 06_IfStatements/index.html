@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>JS Atomic 06</title>
-<!--   <script src="global.js"></script> -->
+  <script src="global.js"></script>
 </head>
 <body>
   <h1>JS Atomic 06</h1>
@@ -40,6 +40,16 @@
   <p>Comparison and Logical operators are used to test for true or false in the DOM Console.</p>
   <h5>How is true similar or dissimilar from "true"? Can they be used in the same way?</h5>
   <p>true is not the same as 'true', thus they can not be used in the same way.</p>
+
+  <h3>6B: Password Game</h3>
+  <h4>Questions:</h4>
+  <h5>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?</h5>
+  <p>In all my experiments, password was case-sensitive.</p>
+  <h5>Did you use = or == or === to compare passwords (or something else)? Why? Would any of the others work?</h5>
+  <p>I tried all three.  '=' leads to a correct password in every test case, regardless of the correct password actually being entered.  With '==' and '===' passwords are case sensitive.</p>
+  <h5>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h5>
+  <p>Because this information is available to any user via the developer tools, Sources tab in the DOM.</p>
+
    
 
 </body>
