@@ -5,23 +5,21 @@
 // Extend this by asking the user what increment they want to count by.
 
 var startValue = prompt("Provide a start value");
+startValue = parseInt(startValue);
 var endValue = prompt("Provide an end value");
+endValue = parseInt(endValue);
 
 function countThis(startValue, endValue){
   if (startValue < endValue) {
-    var i = startValue;
-    while (i <= endValue) {
+    for (i = startValue; i <= endValue; i++) {
       console.log(i);
-      i++;
     }
-  } else if (startValue > endValue) {
-    var i = startValue;
-    while (i >= endValue) {
+  } else if (startValue > endValue){ 
+    for (i = startValue; i >= endValue; i--) {
       console.log(i);
-      i--;
     }
   } else {
-    console.log("The start and end values cannot be the same")
+    console.log("The start and end values cannot be the same");
   }
 }
 

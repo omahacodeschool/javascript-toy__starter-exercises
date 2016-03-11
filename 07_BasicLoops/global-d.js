@@ -24,25 +24,22 @@
 // Extend this by prompting the user for a start value and an end value. Use a `while` loop.
 
 var start = prompt("Please provide a start number");
+start = parseInt(start);
 var end = prompt("Please provide an end number larger than the start number");
+end = parseInt(end);
 
 function fizzBuzz (start, end) {
-  var i = start;
-  while (i <= end) {
+  for (i = start; i <= end; i ++) {
     if (i % 3 === 0 && i % 5 === 0){
       console.log("FizzBuzz");
-      i ++;
     }
     else if (i % 3 === 0){
       console.log("Fizz");
-      i ++;
     }
     else if (i % 5 === 0){
       console.log("Buzz");
-      i ++;
     } else {
       console.log(i)
-      i ++
     }
   }
 }
