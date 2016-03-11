@@ -18,4 +18,9 @@ alert(first_num + " + " + second_num + " + " + third_num + " = " + (num_1 + num_
 alert(first_num + " - " + second_num + " - " + third_num + " = " + (num_1 - num_2 - num_3));
 
 alert(first_num + " * " + second_num + " * " + third_num + " = " + (num_1 * num_2 * num_3))
- 
+
+alert(first_num + " / " + second_num + " = " + (num_1 / num_2))
+
+alert(first_num + " ++ = " + (++num_1))
+
+alert(second_num + " -- = " + (--num_2))
