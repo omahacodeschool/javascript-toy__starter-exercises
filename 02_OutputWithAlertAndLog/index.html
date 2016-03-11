@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <h1>
+      Answers To Burning Questions:
+    </h1>
+  </header>
+
+  <body>
+    <script type="text/javascript" src="global.js">
+    </script>
+    <p>
+      The difference between 'alert()' and 'console.log' is 'alert()' puts a string, whereas 'console.log' allows you to inspect the object itself (according to the internet, anyway). Also, 'alert()' halts everything, until it is dismissed, while 'console.log' does not. 
+    </p>
+      
+    <p>
+    Some situations where you might use an `alert()` to tell the user something could be in the event of deleting something like a profile, or alerting the user that she has been logged out.
+
+    </p>
+
+    <p>
+      Would it make sense to use `console.log()` to tell the user things? Why or why not? 
+      No, it doesn't appear so. That info isn't visible (at least not in this state) unless one opens the js console in the browser.
+    </p>
+
+    <p>
+      What's one way that `alert()` might get obnoxious?
+      One way in which it is already obnoxious: "Are you sure you want to leave this page?". It demands your attention by arresting your browser until it is addressed.
+    </p>
+      
+    <p>
+      What's one way that `console.log()` might be a good tool for you to use?
+      For debugging, I imagine? One could use it to track user interaction with the page, I think... 
+    </p>
+
+    <p>
+      When do the `console.log()` statements get run? Is it before the first `alert()` gets displayed? After it gets displayed but before the user clicks "OK" (or equivalent)? After the user clicks to close the dialog box? A different time? How did you find out for sure?
+      The console.log statements are run just after the first alert is clicked. I stepped through the flow in the Source tab on the js console in Chrome.
+    </p>
+
+    <p>
+      Other questions?
+    </p>
+
+  </body>
+</html>
