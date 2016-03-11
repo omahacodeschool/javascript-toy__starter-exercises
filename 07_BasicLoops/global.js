@@ -5,17 +5,18 @@
 
 var numA = parseInt(prompt("enter your first number:"));
 var numB = parseInt(prompt("enter your second number:"));
+var increment = parseInt(prompt("at what increment would you like to count by?"));
 
 if (numA > numB) {
   while (numA >= numB) {
     console.log("The number is: " + numA);
-    numA--;
+    numA -= increment;
   }
 }
 else if (numA < numB) {
   while (numA <= numB) {
     console.log("The number is: " + numA);
-    numA++;
+    numA += increment;
   }
 }
 else {
