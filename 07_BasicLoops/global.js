@@ -1,7 +1,23 @@
-// Use a while loop to count from 1-10 (do your output either using console.log() or alert()).
+// Prompt the user for a start value and an end value. 
+// Count from the start value to the end value using a while loop. 
+// Make sure to account for the start-value being equal to or greater than the end-value (should it not count? Should it count down instead of up in such cases?).
+// Extend this by asking the user what increment they want to count by.
 
-var i = 1;
-while (i <= 10) {
-  console.log("The number is: " + i);
-  i++;
+var numA = parseInt(prompt("enter your first number:"));
+var numB = parseInt(prompt("enter your second number:"));
+
+if (numA > numB) {
+  while (numA >= numB) {
+    console.log("The number is: " + numA);
+    numA--;
+  }
 }
+else if (numA < numB) {
+  while (numA <= numB) {
+    console.log("The number is: " + numA);
+    numA++;
+  }
+}
+else {
+  console.log(numA + " = " + numB)
+};
