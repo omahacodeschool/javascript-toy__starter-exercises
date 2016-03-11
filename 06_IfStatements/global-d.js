@@ -27,6 +27,8 @@ var rentCarMessage = "You can rent a car";
 var drinkAndDriveMessage = "Please don't drink and drive";
 var driveOnlyMessage = "You're eligible for a driver's license";
 var tooYoungMessage = "You can't drive yet, but you'll be able to in a few years";
+var notBornYetMessage = "You haven't been born yet";
+var NaNMessage = "Sorry, but that's not a number";
 
 if (age >= rentCarAge){
   alert(driveOnlyMessage);
@@ -43,7 +45,17 @@ if (age >= driveOnly && age < drinkAndDrive) {
   alert(driveOnlyMessage);
 }
 
-if (age <= tooYoung) {
+if (age <= tooYoung && age > 0) {
   alert(tooYoungMessage);
 }
+
+if (age <= 0) {
+  alert(notBornYetMessage);
+}
+
+if (isNaN(age)){
+  alert(NaNMessage);
+}
+
+console.log(age)
 
