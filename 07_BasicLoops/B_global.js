@@ -5,17 +5,23 @@ for (var i = 0; i < 2; i++) {
 }
 
 if (inputArr[0] === inputArr[1]) {
-  alert("I can't count! Both of these numbers are equal!");
+  alert("I can't count! These numbers are equal!");
 } else if (inputArr[0] < inputArr[1]) {
   var x = inputArr[0]
   var y = inputArr[1]
 } else {
-  var x = inputArr[1]
-  var y = inputArr[0]  
+  var a = inputArr[0]
+  var b = inputArr[1]  
 };
 
 while (x <= y) {
-  alert("Let's count from " + y + "! Count: " + x);
+  alert("Let's count to " + y + "! Count: " + x);
   console.log("Count: " + x);
   x++;
+}
+
+while (a >= b) {
+  alert("Let's count to " + b + "! Count: " + a);
+  console.log("Count: " + a);
+  a--;
 }
