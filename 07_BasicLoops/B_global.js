@@ -15,7 +15,7 @@ if (inputArr[0] === inputArr[1]) {
 };
 
 while (x <= y) {
-  alert("Let's count to ten! Count: " + x);
+  alert("Let's count from " + y + "! Count: " + x);
   console.log("Count: " + x);
   x++;
 }
