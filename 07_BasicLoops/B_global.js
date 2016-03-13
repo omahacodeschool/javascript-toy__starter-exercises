@@ -4,8 +4,18 @@ for (var i = 0; i < 2; i++) {
   inputArr.push(parseInt(prompt("Give me a number, please.")));
 }
 
-while (inputArr[0] <= inputArr[1]) {
-  alert("Let's count to ten! Count: " + inputArr[0]);
-  console.log("Count: " + inputArr[0]);
-  inputArr[0]++;
+if (inputArr[0] === inputArr[1]) {
+  alert("I can't count! Both of these numbers are equal!");
+} else if (inputArr[0] < inputArr[1]) {
+  var x = inputArr[0]
+  var y = inputArr[1]
+} else {
+  var x = inputArr[1]
+  var y = inputArr[0]  
+};
+
+while (x <= y) {
+  alert("Let's count to ten! Count: " + x);
+  console.log("Count: " + x);
+  x++;
 }
