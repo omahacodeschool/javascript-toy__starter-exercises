@@ -9,9 +9,11 @@ if (inputArr[0] === inputArr[1]) {
 } else if (inputArr[0] < inputArr[1]) {
   var x = inputArr[0]
   var y = inputArr[1]
+  console.log("Count up from " + x + " to " + y)
 } else {
   var a = inputArr[0]
-  var b = inputArr[1]  
+  var b = inputArr[1]
+  console.log("Count down from " + a + " to " + b)
 };
 
 while (x <= y) {
