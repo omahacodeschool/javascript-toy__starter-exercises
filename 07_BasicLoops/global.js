@@ -1,22 +1,19 @@
-// Prompt the user for a start value and an end value. 
-// Count from the start value to the end value using a while loop. 
-// Make sure to account for the start-value being equal to or greater than the end-value (should it not count? Should it count down instead of up in such cases?).
-// Extend this by asking the user what increment they want to count by.
+// Implement the 99 Bottles of Beer on the Wall song using a loop. Make sure to account for having 1 bottle (instead of "1 bottles"). Use a while loop.
 
-var numA = parseInt(prompt("enter your first number:"));
-var numB = parseInt(prompt("enter your second number:"));
-var increment = parseInt(prompt("at what increment would you like to count by?"));
+// var i = 99;
 
-if (numA > numB) {
-  for(i = numA; i > numB -1; i -= increment) {
-    console.log("The number is: " + i);
-  }
-}
-else if (numA < numB) {
-  for(i = numA; i < numB +1; i += increment ) {
-    console.log("The number is: " + i);
-  }
-}
-else {
-  console.log(numA + " = " + numB)
+for (i = 99; i > 2;) {
+  console.log(i + " Bottles of beer on the wall...")
+  i--;
+  console.log("Take one down... " + i + " Bottles of beer on the wall.")
+};
+for (i = 2; i > 1;) {
+  console.log(i + " Bottles of beer on the wall...")
+  i--;  
+  console.log("Take one down... " + i + " Bottle of beer on the wall.")
+};
+for (i = 1; i > 0;) {
+  console.log(i + " Bottle of beer on the wall...")
+  i--;
+  console.log("Take it down... " + i + " Bottles of beer on the wall!")
 };
