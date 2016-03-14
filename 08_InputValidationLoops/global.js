@@ -2,10 +2,10 @@
 // Prompt the user for the password. 
 // Keep prompting until they correctly input the password, then congratulate them on a job well done.
 
-var password = "Loggins";
-var userPassword = prompt("Enter your password.");
+var num = 23;
+var userNum = parseInt(prompt("Guess the number."));
 
-while(userPassword != password){
-  var userPassword = prompt("That's not correct, try again.")
+while(num != userNum){
+  var userNum = parseInt(prompt("Guess again."))
 };
 alert("That's correct, please proceed.");
