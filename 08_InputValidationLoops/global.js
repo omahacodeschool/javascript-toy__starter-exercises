@@ -2,10 +2,9 @@
 // Prompt the user for the password. 
 // Keep prompting until they correctly input the password, then congratulate them on a job well done.
 
-var num = 23;
-var userNum = parseInt(prompt("Guess the number."));
+var userNum = parseInt(prompt("Give me a number between 1 and 8."));
 
-while(num != userNum){
-  var userNum = parseInt(prompt("Guess again."))
+while(userNum >= 1 && userNum <=8){
+  var userNum = parseInt(prompt("Good job, keep going!"))
 };
-alert("That's correct, please proceed.");
+alert(userNum + " is outside the range.");
