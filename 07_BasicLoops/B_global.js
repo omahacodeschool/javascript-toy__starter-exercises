@@ -5,27 +5,27 @@ for (var i = 0; i < 2; i++) {
 }
 
 var counter = parseInt(prompt("And what would you like to count by?"));
+var start   = inputArr[0]
+var finish  = inputArr[1]
 
-if (inputArr[0] === inputArr[1]) {
-  alert("I can't count! These numbers are equal!");
-} else if (inputArr[0] < inputArr[1]) {
-  var x = inputArr[0]
-  var y = inputArr[1]
-  console.log("Count up from " + x + " to " + y + " by " + counter)
+if (start === finish) {
+  alert("Does not compute. These numbers are equal.");
+
+} else if (start < finish) {
+  var countTo = (start <= finish)
+
+  console.log("Count up from " + start + " to " + finish + " by " + counter)
+
 } else {
-  var a = inputArr[0]
-  var b = inputArr[1]
-  console.log("Count down from " + a + " to " + b + " by " + counter)
+  var countTo = (start >= finish)
+  function countBy(start, counter) {
+    start - counter;
+  }
+  console.log("Count down from " + start + " to " + finish + " by " + counter)
 };
 
-while (x <= y) {
-  alert("Let's count up to " + y + " by " + counter + "! Count: " + x);
-  console.log("Count: " + x);
-  x = x + counter;
-}
-
-while (a >= b) {
-  alert("Let's count down to " + b + " by " + counter + "! Count: " + a);
-  console.log("Count: " + a);
-  a = a - counter;
+while (countTo) {
+  alert("Let's count from " + start + " to " + finish + " by " + counter + "! Count: " + start);
+  // console.log("Count: " + x);
+  start = (countBy(start, counter));
 }
