@@ -2,9 +2,14 @@
 // Prompt the user for the password. 
 // Keep prompting until they correctly input the password, then congratulate them on a job well done.
 
-var userNum = parseInt(prompt("Give me a number between 1 and 8."));
+var sideA = parseInt(prompt("Enter length of side A"));
+var sideB = parseInt(prompt("Enter length of side B"));
+var sideC = parseInt(prompt("Enter length of side C"));
 
-while(userNum >= 1 && userNum <=8){
-  var userNum = parseInt(prompt("Good job, keep going!"))
+while (((sideA + sideB) <= sideC) || ((sideA + sideC) <= sideB) || ((sideB + sideC) <= sideA)) {
+  alert("That's not a valid triangle! Try again.")
+  var sideA = parseInt(prompt("Enter length of side A"));
+  var sideB = parseInt(prompt("Enter length of side B"));
+  var sideC = parseInt(prompt("Enter length of side C"));
 };
-alert(userNum + " is outside the range.");
+alert("Now that's a valid triangle!");
