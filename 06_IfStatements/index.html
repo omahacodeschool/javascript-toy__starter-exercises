@@ -1,0 +1,84 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+ <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+  <h2>Relational Equality Operators</h2>
+  <p>
+    console.log( "5 == '5' is " + (5 == '5') ); //true <strong>correct</strong><br>
+    This expression says is the number '5' equal to the string '5'.<br><br>
+
+    console.log( "5 == 'five' is " + (5 == 'five') ); //false <strong>correct</strong><br>
+    This expression says is the number '5' equal to the string 'five'.<br><br>
+
+    console.log( "5 == '6' is " + (5 == '6') ); //false <strong>correct</strong><br>
+    This expression says is the number '5' equal to the number '6'.<br><br>
+
+    console.log( "5 === '5' is " + (5 === '5') ); //false <strong>correct</strong><br>
+    This expression says is the number '5' is exactly equal to the string '5'.<br><br>
+
+    console.log( "5 == 2 + 3 is " + (5 == 2 + 3) ); //true<strong>correct</strong><br>
+    This expression says the number '5' is equal to the numeric value of '2 + 3'. <br><br>
+
+    console.log( "5 == 5 is " + (5 == 5) ); //true <strong>correct</strong><br>
+    This expression says the number '5' is equal to the number '5'<br><br>
+
+    console.log( "5 === 5 is " + (5 === 5) ); //true <strong>correct</strong><br>
+    This expression says the number '5' is exactly equal to the number '5'. <br><br>
+
+    console.log( "true == 'true' is " + (true == 'true') ); //true <strong>incorrect</strong><br>
+    This expression says the boolean 'true' is equal to the string 'true'. <br>This is actually <strong>false</strong> because javascript cannot convert a string to a boolean.<br><br>
+
+    console.log( "true === 'true' is " + (true === 'true') ); //false <strong>correct</strong><br>
+    This expression says the boolean 'true' is exactly equal to the string 'true'.<br><br>
+
+    console.log( "true == false is " + (true == false) ); //false <strong>correct</strong><br>
+    This expression says the boolean 'true' is equal to the boolean 'false'.<br><br>
+
+    console.log( "5 == 12 is " + (5 == 12) ); //false <strong>correct</strong><br>This expression says the number '5' is equal to the number '12'.<br><br>
+
+    console.log( "5 != 12 is " + (5 != 12) ); //true <strong>correct</strong><br>
+    This expression says the number '5' is not equal to the number '12'.<br><br>
+
+    console.log( "5 < 12 is " + (5 < 12) ); //true <strong>correct</strong><br>
+    This expression says the number '5' is less than the number '12'.<br><br>
+
+    console.log( "5 <= 12 is " + (5 <= 12) ); //true <strong>correct</strong><br>This expression says the number '5' is less than OR equal to the number '12'.<br><br>
+
+    console.log( "5 > 12 is " + (5 > 12)); //false <strong>correct</strong><br>
+    This expression says the number '5' is greater than the number '12'.<br><br>
+    
+    console.log( "5 >= 12 is " + (5 >= 12)); //false <strong>correct</strong><br>
+    This expression says the number '5' is greater than OR equal to the number '12'.
+  </p>
+
+  <h2>Questions</h2>
+  <p>
+  - What do you call `true` and `false` values?<br>
+  Booleans<br><br>
+
+  - How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?<br>
+  A value of 'true' as a boolean is different from a value of "true" as a string.  'True' is a value returned when a condition given is accurate.  "True" is a word used in text.  They mean different things because they contexts used in are differnt.  JavaScript cannot do automatic type conversions from "true" to 'true' I'm assuming because to JS "true" might as well be "hippopotomus".<br><br>
+
+  - Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?<br>
+  Capitalization must be exact<br><br>
+
+  - Did you use `=` or `==` or `===` to compare passwords (or something else)? Why? Would any of the others work?<br>
+  I used '==' to compare passwords because my password is a string and anything taken into params is a string as well so while '===' would have worked as well it was not necessary.  Using '=' would work as well.<br><br>
+
+
+  - Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?<br>
+  
+
+
+  </p>
+
+
+  
+
+  <!-- Answer the 3 questions above here -->
+</body>
+</html>
