@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <script src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <h2>Basic Math</h2>
+
+  <h3><u>Question:</u> What happens when you try to parse the integer out of a string like "I am 9 years old"? How about "9 is my age"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h3>
+  <p>When we try to parse the integer out of a string we get a 'NaN + NaN + NaN = NaN' result, except in the situation when a user inputs an integer first, for example: 9 is my age will be recorded as var = 9.  Therefore, for a string to be parsed correctly into an integer, the first character of the string must be an integer.</p>
+
+  <h3><u>Question:</u> What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?
+  </h3>
+  <p>Here, when I entered 7,2 as an integer, javascript returned 7.  When I entered $50, javascript returned NaN.  Like the previous example, for an string to be correctly parsed into an integer, the first character of the string must be an integer.</p>
+
+  <h3>What questions do you have?</h3>
+  <p>Why will javascript output floats i.e. 7 / 4 = 1.75, while ruby's output would be 7 / 4 = 1
+
+</body>
+</html>
