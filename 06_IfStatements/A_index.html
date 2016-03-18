@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Atomic 06 A</title>
+
+  <script type="text/javascript" src="A_global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06 A</h1>
+
+  <h2>Boolean Results</h2>
+
+  <p>5 == '5' I guessed to be TRUE</p>
+  <p>correctly...because I'm guessing JS reads the value of the Integer within the String.</p>
+
+  <p>5 == 'five' I guessed to be FALSE</p>
+  <p>correctly...because 'five' is written as a word and JS doesn't understand the value of the characters as equal to 5.</p>
+
+  <p>5 == '6' I guessed to be FALSE</p>
+  <p>correctly...because, even though one is an Integer and the other a String, their inherent values are different.</p>
+
+  <p>5 === '5' I guessed to be FALSE</p>
+  <p>correctly...because the '===' is asking whether they are of both equal value and data type.</p>
+
+  <p>5 == 2 + 3 I guessed to be TRUE</p>
+  <p>correctly...because the sum of 2 and 3 is equal to 5.</p>
+
+  <p>5 == 5 I guessed to be TRUE</p>
+  <p>correctly...because they're both Integers with the value of 5.</p>
+
+  <p>5 === 5 I guessed to be TRUE</p>
+  <p>correctly...because they share both value and data type.</p>
+
+  <p>true == 'true' I guessed to be FALSE</p>
+  <p>correctly...because the first is Boolean and the other a String.</p>
+
+  <p>true === 'true' I guessed to be FALSE</p>
+  <p>correctly...because they neither share the same value or the same data type.</p>
+
+  <p>true == false I guessed to be FALSE</p>
+  <p>correctly...because because they are opposite Booleans of eachother.</p>
+
+  <p>5 == 12 I guessed to be FALSE</p>
+  <p>correctly...because these Integers don't have the same value.</p>
+
+  <p>5 != 12 I guessed to be TRUE</p>
+  <p>correctly...because these Integers don't have the same value.</p>
+
+  <p>5 < 12 I guessed to be TRUE</p>
+  <p>correctly...because the Integer 5 is less than the Integer 12.</p>
+
+  <p>5 <= 12 I guessed to be TRUE</p>
+  <p>correctly...because, while 5 is less than 12, it is not also equal to it.</p>
+
+  <p>5 > 12 I guess to be FALSE</p>
+  <p>correctly...because 5 is not greater than 12.</p>
+
+  <p>5 >= 12 I guessed to be FALSE</p>
+  <p>correctly...because 4 is neither greater than or equal to 12.</p>
+
+
+  <h2>What do you call true and false values?</h2>
+  <p>Booleans.</p>
+
+  <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
+  <p>From research I have found that JS converts operands of differing type to then compare them. It seems that they are compared as each data type and all instances must evaluate to true to reach the end evaluation of true. In this case, when converting both to numbers, the Boolean is converted to '1' while "true" is converted to NaN. I wouldn't think that they could be used in the same way.</p>
+</body>
+</html>

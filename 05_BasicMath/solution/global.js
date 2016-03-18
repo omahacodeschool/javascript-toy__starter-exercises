@@ -2,7 +2,7 @@
 
 //collect our 3 numbers from the prompt, convert to integers
 var firstNum = prompt("Give me the first number");
-firstNum = parseInt(firstNum);
+firstNum = (firstNum);
 
 // We could also do it this way: var firstNum = parseInt( prompt( "Give me the first number" ));
 // I prefer splitting those lines up, as it enhances readability
