@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06</title>
+  <script src="global_3.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+
+    <h2>If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?</h2>
+    <p>'==' is a lenient comparison operator whereas '===' is a strict one.  So, if you didn't convert the string to an integer, it wouldn't recognize 2 as being the same as "2" for example.  So, if you wanted to spare yourself a line of code you might use the '==' but if you wanted to make sure that you were matching a password and wanted the match to be exact in all respects, you'd want to convert to an integer and use the '==="</p>
+
+    <h2>If you collect the user's input as an integer (i.e. by using `parseInt()` to turn it into an integer), can you use `==` to compare? `===`? Which is better in this case?</h2>
+    <p>If you convert it to an integer, you could definitely use '==".  However, I'm not sure, in this instance, that there's really a better or worse to be found with this.</p>
+
+    <h2>What is the difference between `==` and `===`?</h2>
+    <p>As mentioned before '==" is a lenient comparison operator, meaning that when comparing an integer and a string, it'll convert them both to a common type and compare their value.  The '===' is a strict comparison, so both sides of the operator have to be exactly the same.</p>
+
+    <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+    <p>Well, hard to say.  I tend to think that anything that's functioning as a password should be an exact match.  So, in the spirit of that, I'd say turn it into an integer and use the '==='.  Plus doing that allows you to maybe perform some mathematical operations on it, which could allow you to do something more interesting than just asking them for their secret number.  However, if a coding virtue is to keep it as simple as it needs to be, then converting from string to integer is a bit more complex, though not much.</p>
+</body>
+</html>

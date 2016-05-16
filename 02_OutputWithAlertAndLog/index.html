@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 02</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+
+</head>
+<body>
+  <h1>JS Atomic 02</h1>
+  
+  <h2>What's the difference between alert() and console.log()?</h2>
+  <p>Simply put, an alert() is displayed directly to the user whereas a console.log() is stored to the console and can only be viewed on the console.  Also, the alert() is geared more towards giving the user information while the console.log is set up more to give the developer information and keep track of what javascript is doing behind the scenes.</p>
+  
+  <h2>What's one situation where you might use an `alert()` to tell the user something?</h2>
+  <p>Well, as we use alerts in this section, they can be used to provide urgen information to the user(though, how saying hi and introducing myself doesn't really meet that threshold).  So, if you wanted to tell them to be sure to do something while on the page to ensure they get full functionality out of it.  That might be one thing.  You might also use the alert's popup to convey that certain tasks have been completed.</p>
+  
+  <h2>What's one way that `alert()` might get obnoxious?</h2>
+  <p>Well, anything that's poping up and needs to be closed before you can do anything else is liable to get annoying or obnoxious if overused.  For example, on our travel app, if you set up an alert to tell the user every time they'd successfully filled out one form and moved on to the next cell that might entail them having to click through a dozen popups or more.</p>
+
+  <h2>Would it make sense to use `console.log()` to tell the user things? Why or why not?</h2>
+  <p>It would probably not make sense to use console.log() to tell the user things because it's not displayed directly to the user.  They'd need to know how to access the console to see what was put there via console.log().</p>
+
+  <h2>What's one way that `console.log()` might be a good tool for you to use?</h2>
+  <p>Well, you could track javascript activity on the page and not clutter up the user's screen with information they have little interest in.  It would give you a way to track what javascript is up to.</p>
+
+  <p>In addition, googling gave me these other good reasons to use console log with debugging as opposed to trying to do it with alerts.
+    <ul>
+
+      <li>alert() is blocking</li>
+      <li>alert() cannot be easily suppressed in non-debug environment</li>
+      <li>console typically formats your objects nicely and allows to traverse them</li>
+      <li>logging statements often have an interactive pointer to code which issued logging statement</li>
+      <li>you cannot look at more than one alert() message at a time</li>
+      <li>consoles can have different logging levels with intuitive formatting</li>
+
+    </ul>
+  </p> 
+
+  <h2>When do the `console.log()` statements get run? Is it before the first `alert()` gets displayed? After it gets displayed but before the user clicks "OK" (or equivalent)? After the user clicks to close the dialog box? A different time? How did you find out for sure?</h2>
+  <p>They're not run before the first alert because the alerts come sequentially before the console.log() statements in our program.  Also, they don't get run until after the user clicks ok, because alerts halt program execution until they're cleared. I suppose I'm not sure, but just based on the documentation I found for both console.log() and alert() that's what makes sense in terms of what happens.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>Several, I'm sure, just not sure what they are yet.</p>
+  
+  <!-- etc. -->
+</body>
+</html>
